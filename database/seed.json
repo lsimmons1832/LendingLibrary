@@ -1,0 +1,89 @@
+{
+	"books": {
+		"book0": {
+			"isCheckedOut": true,
+			"title": "The Fault In Our Stars",
+			"author": "John Green",
+			"isbn": "9781594137907",
+			"imageLink":"http://books.google.com/books/content?id=UzqVUdEtLDwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+			"uid": "c3C4VdWSKVWLgGcB2905Ra3UBcH2",
+			"borrowerUid": "M1kNXhIrWcPrHj6makhduVHbM4G2",
+			"description": "kjvsbnfkvskj hev nlsnlshvi ioh fcv sio nvlksn hiaojcio oef"
+		},
+		"book1": {
+			"isCheckedOut": false,
+			"title": "A Handmaid's Tale",
+			"author": "Margaret Atwood",
+			"isbn": "9780770422639",
+			"imageLink":"http://books.google.com/books/content?id=tIceOIzTQfgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+			"uid": "c3C4VdWSKVWLgGcB2905Ra3UBcH2",
+			"borrowerUid": "M1kNXhIrWcPrHj6makhduVHbM4G2",
+			"description": "sjvnkjwsnvksn iewnf vcajoivhjsw  ivw ovivn o wn von ih l"
+		},
+		"book2": {
+			"isCheckedOut": false,
+			"title": "Facing Your Giants",
+			"author": "Max Lucado",
+			"isbn ": "9781418585204 ",
+			"imageLink":"http://books.google.com/books/content?id=ZFWYwblGRzwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+			"uid": "c3C4VdWSKVWLgGcB2905Ra3UBcH2",
+			"borrowerUid": "M1kNXhIrWcPrHj6makhduVHbM4G2",
+			"description": "snjfnvskj iohviwnv nvlki vohwso iowjhionvls l wjviwamvkls "
+		},
+		"book3": {
+			"isCheckedOut": false,
+			"title": "Storm Front",
+			"author": "Jim Butcher",
+			"isbn": "9780965725569",
+			"imageLink":"http://books.google.com/books/content?id=gdEBDAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+			"uid": "M1kNXhIrWcPrHj6makhduVHbM4G2",
+			"borrowerUid": "c3C4VdWSKVWLgGcB2905Ra3UBcH2",
+			"description": "grvnen lz v ifan falkmnn gflewniv laeninv aio jg ngvlkd ng"
+		},
+		"book4": {
+			"isCheckedOut": false,
+			"title": "Fool Moon",
+			"author": "Jim Butcher",
+			"isbn": "9781480581227",
+			"imageLink":"http://books.google.com/books/content?id=mUwKAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+			"uid": "M1kNXhIrWcPrHj6makhduVHbM4G2",
+			"borrowerUid": "c3C4VdWSKVWLgGcB2905Ra3UBcH2",
+			"description": "gnknvd vnfwn vlka vlagan vl ioraehjfnanla  ioj frdmalkn"
+		},
+		"book5": {
+			"isCheckedOut": false,
+			"title": "Grave Peril",
+			"author": "Jim Butcher",
+			"isbn": "9780965725590",
+			"imageLink":"http://books.google.com/books/content?id=h59GAQAAMAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+			"uid": "M1kNXhIrWcPrHj6makhduVHbM4G2",
+			"borrowerUid": "c3C4VdWSKVWLgGcB2905Ra3UBcH2",
+			"description": "gbiusbnvnndnvif enionrnvrngvaenio kl vldmoigeaiognioa"
+		}
+	},
+	"ratings":{
+		"rating0":{
+			"isbn":"9781480581227",
+			"rating":5,
+			"uid": "M1kNXhIrWcPrHj6makhduVHbM4G2"
+		},
+		"rating1":{
+			"isbn":"9780965725590",
+			"rating":5,
+			"uid": "c3C4VdWSKVWLgGcB2905Ra3UBcH2"
+		}
+	},
+	"users": {
+		"user0": {
+			"uid": "M1kNXhIrWcPrHj6makhduVHbM4G2",
+			"profilePic": "",
+			"username": "MilkyWay"
+		},
+		"user1": {
+			"uid": "c3C4VdWSKVWLgGcB2905Ra3UBcH2",
+			"profilePic": "",
+			"username": "Snickers"
+		}
+
+	}
+}
