@@ -1,0 +1,9 @@
+body {
+  background-color: #FFC857; }
+  body .navbar {
+    height: 100px;
+    padding: 0;
+    background-color: #201A23;
+    font-size: 20px; }
+  body h1 {
+    color: #1F2041; }
