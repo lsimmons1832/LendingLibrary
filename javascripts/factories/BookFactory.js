@@ -20,5 +20,16 @@ app.factory("BookFactory", function($http, $q, FIREBASE_CONFIG){
 		});
 	};
 
-	return{getBookList: getBookList};
+	let getBookDetails = (id) => {
+	return $q((resolve, reject) =>{
+		$http.get(`${FIREBASE_CONFIG.databaseURL}/books/${id}.json`)
+		.then((details) =>{
+			details.data.id = id;
+			resolve(details);
+		}).catch((error)=>{
+		reject(error);
+		});
+	});
+};
+	return{getBookList: getBookList, getBookDetails: getBookDetails};
 });
