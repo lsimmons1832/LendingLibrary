@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-4">
+    <div class="input-group">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li class="dropdownType"><a href="#">Author</a></li>
+          <li class="dropdownType"><a href="#">Title</a></li>
+        </ul>
+      </div>
+      <input id="search" type="text" class="form-control" placeholder="Search for..." ng-model="searchText">
+		<span class="input-group-btn">
+			<button class="btn btn-default" type="button">Go!</button>
+		</span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+
+ <div class="clearfix"></div>
+
+<div ng-repeat="item in books | filter: searchText">
+  <div class="row">
+    <div class="col-xs-6 col-md-4">
+		<h3>
+			<a ng-href="#!/book/view/{{item.id}}">{{item.title}}</a>
+		</h3>
+			<img ng-src="{{item.imageLink}}" alt="">
+			<h4>{{item.author}}</h4>
+			<h5>{{item.description}}</h5>
+			<button class="center-block" ng-click="addNewBook()">Add To My Collection</button>  <!-- This function doesn't work ***MUST FIX-->
+      </div>
+    </div>
+  </div>
+

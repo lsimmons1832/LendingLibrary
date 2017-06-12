@@ -1,4 +1,4 @@
-app.factory("BookFactory", function($http, $q, FIREBASE_CONFIG){
+app.factory("BookFactory", function($http, $q, FIREBASE_CONFIG, GOOGLE_BOOKS){
 
 	let getBookList = () =>{
 		let bookz = [];
@@ -14,6 +14,25 @@ app.factory("BookFactory", function($http, $q, FIREBASE_CONFIG){
 					});
 				}
 				resolve(bookz);
+			}).catch((error)=>{
+				reject(error);
+			});
+		});
+	};
+
+	let getMyBooks = (uid) => {
+		let myBooks = [];
+		return $q((resolve, reject) => {
+			$http.get(`${FIREBASE_CONFIG.databaseURL}/books.json?orderBy='uid'&equalTo=${uid}`)
+			.then((fbBookz) =>{
+				let bookCollection = fbBookz.data;
+				if(bookColletion !== null){
+					Object.keys(bookCollection).forEach((key) => {
+					bookCOllection[key].bookId = key;
+					myBooks.push(bookCollection[key]);
+					});
+				}
+				resolve(myBooks);
 			}).catch((error)=>{
 				reject(error);
 			});
@@ -53,5 +72,18 @@ app.factory("BookFactory", function($http, $q, FIREBASE_CONFIG){
 		});
 	};
 
-	return{getBookList: getBookList, getBookDetails: getBookDetails, borrowBook: borrowBook};
+let searchText = $(".search").val();
+	console.log("searchText", searchText);
+	let getGoogleBooksByTitle = (searchText, key) =>{
+		return $q((resolve, reject) =>{
+			$http.get(`GOOGLE_BOOKS.databaseURL}${searchText}&key=${key}`)
+			.then((data) =>{
+				resolve(data);
+			}).catch((error) =>{
+				console.log(error);
+			});
+	    });
+	};
+
+	return{getBookList: getBookList, getBookDetails: getBookDetails, borrowBook: borrowBook, getMyBooks: getMyBooks, getGoogleBooksByTitle: getGoogleBooksByTitle};
 });
