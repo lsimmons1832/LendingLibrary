@@ -8,7 +8,7 @@
           <li><a href="#">Title</a></li>
         </ul>
       </div>
-      <input type="text" class="form-control" placeholder="Search for...">
+      <input type="text" class="form-control" placeholder="Search for..." ng-model="searchText">
 		<span class="input-group-btn">
 			<button class="btn btn-default" type="button">Go!</button>
 		</span>
@@ -24,6 +24,7 @@
 			<a ng-href="#!/book/view/{{item.id}}">{{item.title}}</a>
 		</h3>
 			<img ng-src="{{item.imageLink}}" alt="">
+			<button class="center-block" ng-click="checkoutBook()">Checkout</button>  <!-- This function doesn't work ***MUST FIX-->
       </div>
     </div>
   </div>
