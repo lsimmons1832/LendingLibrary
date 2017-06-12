@@ -12,3 +12,17 @@
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
 </div><!-- /.row -->
+ <div class="clearfix"></div>
+<div ng-repeat="item in books | filter: searchText">
+  <div>
+    <div >
+    <h3>
+      <a ng-href="#!/book/view/{{item.id}}">{{item.title}}</a>
+    </h3>
+    </div>
+      <div>
+        <img ng-src="{{item.imageLink}}" alt="">
+      </div>
+    </div>
+  </div>
+</div>

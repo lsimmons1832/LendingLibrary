@@ -1,1 +1,1 @@
-var app = angular.module("LendingLibrary", ["ngAnimate", "ngRoute", "ngSanitize", "ui.bootstrap"]);
+var app = angular.module("LendingLibrary", ["ngRoute", "ngSanitize", "ui.bootstrap"]);
