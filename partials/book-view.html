@@ -1,0 +1,8 @@
+<h3 class="text-center">{{selectedBook.title}}</h3>
+<img class="img-rounded center-block" ng-src="{{selectedBook.imageLink}}" alt="">
+<h4 class="text-center">Authors: {{selectedBook.author}}</h4>
+<h5 class="text-center">Description: {{selectedBook.description}}</h5>
+<p class="text-center">ISBN: {{selectedBook.isbn}}</p>
+<!-- MUST ADD RATING HERE -->
+<button class="center-block" ng-click="checkoutBook()">Checkout</button>
+

@@ -20,5 +20,38 @@ app.factory("BookFactory", function($http, $q, FIREBASE_CONFIG){
 		});
 	};
 
-	return{getBookList: getBookList};
+	let getBookDetails = (id) => {
+	return $q((resolve, reject) =>{
+		$http.get(`${FIREBASE_CONFIG.databaseURL}/books/${id}.json`)
+		.then((details) =>{
+			details.data.id = id;
+			resolve(details);
+		}).catch((error)=>{
+		reject(error);
+		});
+	});
+};
+
+		let borrowBook = (book) => {
+			return $q((resolve, reject) => {
+				$http.put(`${FIREBASE_CONFIG.databaseURL}/books/${book.id}.json`,
+				JSON.stringify({
+					isCheckedOut: book.isCheckedOut,
+					title: book.title,
+					imageLink: book.imageLink,
+					author: book.author,
+					description: book.description,
+					isbn: book.isbn,
+					uid: book.uid,
+					borroweruid: book.borrowerUid	
+				})
+			).then((results) =>{
+				resolve(results);
+			}).catch((error) => {
+				reject(error);
+			});
+		});
+	};
+
+	return{getBookList: getBookList, getBookDetails: getBookDetails, borrowBook: borrowBook};
 });
