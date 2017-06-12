@@ -1,6 +1,7 @@
 app.controller("BookViewCtrl", function($location, $routeParams, $scope, BookFactory){
 
 	$scope.selectedBook = {};
+	$scope.ratings = {};
 	
 	BookFactory.getBookDetails($routeParams.id)
 	.then((book) =>{
@@ -16,5 +17,12 @@ app.controller("BookViewCtrl", function($location, $routeParams, $scope, BookFac
 		console.log("Error borrowing book", error);
 		});
 	};
+
+	//RatingFactory.getRatings(isbn).then((rates) =>{
+	//console.log("ratings returned", rates);
+	//$scope.ratings = rates;
+	//}).catch((error) =>{
+	//	console.log("Error returning rates", error);
+	//});
 
 });
