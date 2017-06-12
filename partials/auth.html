@@ -1,0 +1,9 @@
+<div uib-alert ng-repeat="alert in alerts" class="alert-danger">{{alert.msg}}</div>
+
+<div class="container col-xs-4 col-xs-offset-4">
+  <input type="email" class="form-control form-spacing" placeholder="Email Address"  ng-model="auth.email" required autofocus>
+  <input type="password" class="form-control form-spacing" placeholder="Password" ng-model="auth.password" required>
+  <input type="text" class="form-control form-spacing" placeholder="Username" ng-model="auth.username" required>
+  <a class="btn btn-lg btn-success col-xs-6" ng-click="loginUser()">Login</a>
+  <a class="btn btn-lg btn-primary col-xs-6" ng-click="registerUser()">Register</a>
+</div>
