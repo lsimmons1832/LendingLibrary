@@ -1,28 +1,29 @@
-<div class="col-lg-6">
+<div class="row">
+  <div class="col-lg-4 col-lg-offset-4">
     <div class="input-group">
+      <div class="input-group-btn">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
         <ul class="dropdown-menu">
           <li><a href="#">Author</a></li>
           <li><a href="#">Title</a></li>
         </ul>
+      </div>
       <input type="text" class="form-control" placeholder="Search for...">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Go!</button>
-      </span>
+		<span class="input-group-btn">
+			<button class="btn btn-default" type="button">Go!</button>
+		</span>
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
+
  <div class="clearfix"></div>
+
 <div ng-repeat="item in books | filter: searchText">
-  <div>
-    <div >
-    <h3>
-      <a ng-href="#!/book/view/{{item.id}}">{{item.title}}</a>
-    </h3>
-    </div>
-      <div>
-        <img ng-src="{{item.imageLink}}" alt="">
+  <div class="row">
+    <div class="col-xs-6 col-md-4">
+		<h3>
+			<a ng-href="#!/book/view/{{item.id}}">{{item.title}}</a>
+		</h3>
+			<img ng-src="{{item.imageLink}}" alt="">
       </div>
     </div>
   </div>
-</div>
