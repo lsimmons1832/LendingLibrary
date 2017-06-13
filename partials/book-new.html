@@ -19,13 +19,13 @@
 
 <div ng-repeat="item in books | filter: searchText">
     <div class="col-xs-6 col-sm-4">
-		<h3 ng-model="newBook.title" class="text-center">{{item.volumeInfo.title}}</h3>
-			<img class="center-block" ng-src="{{item.volumeInfo.imageLinks.thumbnail}}" alt="" ng-model="newBook.imageLink">
-			<h4 class="text-center" ng-model="newBook.author">{{item.volumeInfo.authors}}</h4>
-			<h5 class="text-center" ng-model="newBook.description">{{item.volumeInfo.description}}</h5>
+		<h3 class="text-center">{{item.volumeInfo.title}}</h3>
+			<img class="center-block" ng-src="{{item.volumeInfo.imageLinks.thumbnail}}" alt="" >
+			<h4 class="text-center">{{item.volumeInfo.authors}}</h4>
+			<h5 class="text-center" >{{item.volumeInfo.description}}</h5>
 			<h5>{{item.volumeInfo.industryIdentifiers[0].type}}: </h5>
-			<h5 class="text-center" ng-model="newBook.isbn">{{item.volumeInfo.industryIdentifiers[0].identifier}}</h5>
-			<button class="center-block" ng-click="addNewBook()" ng-model="newBook.isCheckedOut">Add To My Collection</button>  <!-- This function doesn't work ***MUST FIX-->
+			<h5 class="text-center">{{item.volumeInfo.industryIdentifiers[0].identifier}}</h5>
+			<button class="center-block" ng-click="addNewBook(item.volumeInfo)">Add To My Collection</button>  <!-- This function doesn't work ***MUST FIX-->
     </div>
   </div>
 
