@@ -1,24 +1,22 @@
-app.controller("BookNewCtrl", function($scope, BookFactory, appConstants){
-		$scope.books = {};
-		$scope.dropDown;
-		$scope.searchText;
-		$scope.key = appConstants.GOOGLE_BOOKS.apikey;
+app.controller("BookNewCtrl", function($scope, BookFactory, GOOGLE_BOOKS){
+		$scope.books = [];
+		$scope.dropDown ="";
+		$scope.searchText = "";
+		let key = GOOGLE_BOOKS.apiKey;
 
+		 $scope.setdropDown = (searchType) =>{
+			$scope.dropDown = searchType;
+		}
 
-		let getNewBooks = (dropDown,searchText, key) =>{
+		$scope.getNewBooks = () =>{
 			console.log("I'm here");
-			console.log("drop down", dropDown);
-			console.log("search", searchText);
-			console.log("key", key);
-		BookFactory.getGoogleBooksByTitle().then((bookz)=>{
-			$scope.books = bookz;
+		BookFactory.getGoogleBooksByTitle($scope.dropDown, $scope.searchText, key).then((bookz)=>{
+			console.log("books returned", bookz.data.items);
+			$scope.books = bookz.data.items;
 		}).catch((error)=>{
 			console.log('', error);
 		});
 	}
-
-	getNewBooks();
-
 
 
 });

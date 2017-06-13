@@ -75,7 +75,7 @@ app.factory("BookFactory", function($http, $q, FIREBASE_CONFIG, GOOGLE_BOOKS){
 	// console.log("searchText", searchText);
 	let getGoogleBooksByTitle = (dropDown, searchText, key) =>{
 		return $q((resolve, reject) =>{
-			$http.get(`GOOGLE_BOOKS.databaseURL}${dropDown}${searchText}&key=${key}`)
+			$http.get(`${GOOGLE_BOOKS.databaseURL}+${dropDown}:${searchText}&key=${key}`)
 			.then((data) =>{
 				resolve(data);
 			}).catch((error) =>{
