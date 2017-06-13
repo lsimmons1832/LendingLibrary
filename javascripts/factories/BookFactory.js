@@ -84,7 +84,16 @@ app.factory("BookFactory", function($http, $q, FIREBASE_CONFIG, GOOGLE_BOOKS){
 	  });
 	};
 	
-
+	let postNewBook = (newBook) =>{
+		return $q ((resolve, reject) =>{
+			$http.post(`${FIREBASE_CONFIG.databaseURL}/books.json`, JSON.stringify(newBook))
+			.then((resultz) =>{
+				resolve(resultz);
+			}).catch((error) => {
+				reject(error);
+			});
+		});
+	};
 
 	return{getBookList: getBookList, getBookDetails: getBookDetails, borrowBook: borrowBook, getMyBooks: getMyBooks, getGoogleBooksByTitle: getGoogleBooksByTitle};
 });

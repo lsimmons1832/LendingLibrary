@@ -1,4 +1,4 @@
-app.controller("BookViewCtrl", function($location, $routeParams, $scope, BookFactory, RatingFactory){
+app.controller("BookViewCtrl", function($location, $rootScope, $routeParams, $scope, BookFactory, RatingFactory){
 
 	$scope.selectedBook = {};
 	$scope.ratings = [];
@@ -17,6 +17,8 @@ app.controller("BookViewCtrl", function($location, $routeParams, $scope, BookFac
 	});
 
 	$scope.checkoutBook = () =>{
+			$scope.selectedBook.isCheckedOut = true;
+			$scope.selectedBook.borrowerUid = $rootScope.user.uid;
 		BookFactory.borrowBook($scope.selectedBook).then(()=>{
 			$location.url('/books/list/user'); //think about adding books/list/user
 		}).catch((error) => {

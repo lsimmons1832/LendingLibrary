@@ -1,4 +1,4 @@
-app.controller("BookNewCtrl", function($rootScope, $scope, BookFactory, GOOGLE_BOOKS){
+app.controller("BookNewCtrl", function($location, $rootScope, $scope, BookFactory, GOOGLE_BOOKS){
 		$scope.books = [];
 		$scope.dropDown ="";
 		$scope.searchText = "";
@@ -17,6 +17,19 @@ app.controller("BookNewCtrl", function($rootScope, $scope, BookFactory, GOOGLE_B
 			console.log('', error);
 		});
 	}
+	
+	$scope.newBook= {};
 
+		$scope.addNewBook = () => {
+			$scope.newBook.isCheckedOut = false;
+			$scope.newBook.uid = $rootScope.user.uid;
+			$scope.newBook.borrowerUid = "";
+			BookFactory.postNewBook($scope.newBook).then((response) =>{
+				$scope.newBook = {};
+				$location.url("/books/list/user");
+			}).catch((error) => {
+				console.log("Add error", error);
+			});
+		};
 
 });
