@@ -5,8 +5,9 @@
 <p class="text-center">ISBN: {{selectedBook.isbn}}</p>
 <button class="center-block" ng-click="checkoutBook()">Checkout</button>
 
-<h6 class="text-center">Ratings: </h6><!-- MUST ADD RATING HERE -->
-	<ul>
-		<li ng-repeat="rating in ratings">{{rating.rating}}</li>
+<h6 class="text-center" ng-repeat="score in ratings">Ratings: {{score.rating}}</h6><!-- MUST ADD RATING HERE -->
+<!-- 	<ul>
+		<li ng-repeat="item in ratings">{{item.rating}}</li>
+		<li>{{item.uid}}</li>
 	</ul>
-
+ -->

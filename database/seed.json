@@ -71,6 +71,11 @@
 			"isbn":"9780965725590",
 			"rating":5,
 			"uid": "J0N4iAfhvqf80Zh5B8Hdtyqqce72"
+		},
+			"rating2":{
+			"isbn":"9781594137907",
+			"rating":3,
+			"uid": "J0N4iAfhvqf80Zh5B8Hdtyqqce72"
 		}
 	},
 	"users": {

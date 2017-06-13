@@ -72,17 +72,16 @@ app.factory("BookFactory", function($http, $q, FIREBASE_CONFIG, GOOGLE_BOOKS){
 		});
 	};
 
-let searchText = $(".search").val();
-	console.log("searchText", searchText);
-	let getGoogleBooksByTitle = (searchText, key) =>{
+	// console.log("searchText", searchText);
+	let getGoogleBooksByTitle = (dropDown, searchText, key) =>{
 		return $q((resolve, reject) =>{
-			$http.get(`GOOGLE_BOOKS.databaseURL}${searchText}&key=${key}`)
+			$http.get(`GOOGLE_BOOKS.databaseURL}${dropDown}${searchText}&key=${key}`)
 			.then((data) =>{
 				resolve(data);
 			}).catch((error) =>{
 				console.log(error);
 			});
-	    });
+	  });
 	};
 
 	return{getBookList: getBookList, getBookDetails: getBookDetails, borrowBook: borrowBook, getMyBooks: getMyBooks, getGoogleBooksByTitle: getGoogleBooksByTitle};

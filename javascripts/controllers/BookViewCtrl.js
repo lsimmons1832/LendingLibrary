@@ -1,4 +1,4 @@
-app.controller("BookViewCtrl", function($location, $routeParams, $scope, BookFactory){
+app.controller("BookViewCtrl", function($location, $routeParams, $scope, BookFactory, RatingFactory){
 
 	$scope.selectedBook = {};
 	$scope.ratings = {};
@@ -6,7 +6,13 @@ app.controller("BookViewCtrl", function($location, $routeParams, $scope, BookFac
 	BookFactory.getBookDetails($routeParams.id)
 	.then((book) =>{
 		$scope.selectedBook = book.data;
-	}).catch((error) =>{
+		RatingFactory.getRatings($scope.selectedBook.isbn).then((ratingz) =>{
+			console.log("ratings returned", ratingz);
+			$scope.ratings = ratingz.data;
+			}).catch((error) =>{
+				console.log("Error returning rates", error);
+			});
+		}).catch((error) =>{
 		console.log("Error getting book details", error);
 	});
 
@@ -18,11 +24,5 @@ app.controller("BookViewCtrl", function($location, $routeParams, $scope, BookFac
 		});
 	};
 
-	//RatingFactory.getRatings(isbn).then((rates) =>{
-	//console.log("ratings returned", rates);
-	//$scope.ratings = rates;
-	//}).catch((error) =>{
-	//	console.log("Error returning rates", error);
-	//});
 
 });
