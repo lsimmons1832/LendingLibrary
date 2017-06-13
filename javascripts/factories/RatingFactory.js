@@ -1,9 +1,9 @@
 app.factory("RatingFactory", function($http, $q, FIREBASE_CONFIG){
 	
-	let getRatings = (isbn) => {
+	let getRatings = (isbnTemp) => {
 		let ratingz = [];
 		return $q((resolve, reject) =>{
-		$http.get(`${FIREBASE_CONFIG.databaseURL}/ratings.json?orderBy="isbn"&equalTo="${isbn}"`)
+		$http.get(`${FIREBASE_CONFIG.databaseURL}/ratings.json?orderBy="isbn"&equalTo="${isbnTemp}"`)
 			.then((fbRatings) => {
 				let ratingCollection = fbRatings.data;
 			if(ratingCollection !== null){

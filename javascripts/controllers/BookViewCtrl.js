@@ -1,14 +1,14 @@
 app.controller("BookViewCtrl", function($location, $routeParams, $scope, BookFactory, RatingFactory){
 
 	$scope.selectedBook = {};
-	$scope.rating = [];
+	$scope.ratings = [];
 	
 	BookFactory.getBookDetails($routeParams.id)
 	.then((book) =>{
 		$scope.selectedBook = book.data;
 		RatingFactory.getRatings($scope.selectedBook.isbn).then((ratingz) =>{
 			console.log("ratings returned", ratingz);
-			$scope.rating = ratingz.data;
+			$scope.ratings = ratingz;
 			}).catch((error) =>{
 				console.log("Error returning rates", error);
 			});
