@@ -1,94 +1,227 @@
 {
-	"books": {
-		"book0": {
-			"isCheckedOut": true,
-			"title": "The Fault In Our Stars",
-			"author": "John Green",
-			"isbn": "9781594137907",
-			"imageLink":"http://books.google.com/books/content?id=UzqVUdEtLDwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-			"uid": "J0N4iAfhvqf80Zh5B8Hdtyqqce72",
-			"borrowerUid": "eR4LTE2ikiekr5PjbbUHEz8LJwf1",
-			"description": "kjvsbnfkvskj hev nlsnlshvi ioh fcv sio nvlksn hiaojcio oef"
-		},
-		"book1": {
-			"isCheckedOut": false,
-			"title": "A Handmaid's Tale",
-			"author": "Margaret Atwood",
-			"isbn": "9780770422639",
-			"imageLink":"http://books.google.com/books/content?id=tIceOIzTQfgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-			"uid": "J0N4iAfhvqf80Zh5B8Hdtyqqce72",
-			"borrowerUid": "eR4LTE2ikiekr5PjbbUHEz8LJwf1",
-			"description": "sjvnkjwsnvksn iewnf vcajoivhjsw  ivw ovivn o wn von ih l"
-		},
-		"book2": {
-			"isCheckedOut": false,
-			"title": "Facing Your Giants",
-			"author": "Max Lucado",
-			"isbn ": "9781418585204 ",
-			"imageLink":"http://books.google.com/books/content?id=ZFWYwblGRzwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-			"uid": "J0N4iAfhvqf80Zh5B8Hdtyqqce72",
-			"borrowerUid": "eR4LTE2ikiekr5PjbbUHEz8LJwf1",
-			"description": "snjfnvskj iohviwnv nvlki vohwso iowjhionvls l wjviwamvkls "
-		},
-		"book3": {
-			"isCheckedOut": false,
-			"title": "Storm Front",
-			"author": "Jim Butcher",
-			"isbn": "9780965725569",
-			"imageLink":"http://books.google.com/books/content?id=gdEBDAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-			"uid": "eR4LTE2ikiekr5PjbbUHEz8LJwf1",
-			"borrowerUid": "J0N4iAfhvqf80Zh5B8Hdtyqqce72",
-			"description": "grvnen lz v ifan falkmnn gflewniv laeninv aio jg ngvlkd ng"
-		},
-		"book4": {
-			"isCheckedOut": false,
-			"title": "Fool Moon",
-			"author": "Jim Butcher",
-			"isbn": "9781480581227",
-			"imageLink":"http://books.google.com/books/content?id=mUwKAgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-			"uid": "eR4LTE2ikiekr5PjbbUHEz8LJwf1",
-			"borrowerUid": "J0N4iAfhvqf80Zh5B8Hdtyqqce72",
-			"description": "gnknvd vnfwn vlka vlagan vl ioraehjfnanla  ioj frdmalkn"
-		},
-		"book5": {
-			"isCheckedOut": true,
-			"title": "Grave Peril",
-			"author": "Jim Butcher",
-			"isbn": "9780965725590",
-			"imageLink":"http://books.google.com/books/content?id=h59GAQAAMAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-			"uid": "eR4LTE2ikiekr5PjbbUHEz8LJwf1",
-			"borrowerUid": "J0N4iAfhvqf80Zh5B8Hdtyqqce72",
-			"description": "gbiusbnvnndnvif enionrnvrngvaenio kl vldmoigeaiognioa"
-		}
-	},
-	"ratings":{
-		"rating0":{
-			"isbn":"9781480581227",
-			"rating":5,
-			"uid": "eR4LTE2ikiekr5PjbbUHEz8LJwf1"
-		},
-		"rating1":{
-			"isbn":"9780965725590",
-			"rating":5,
-			"uid": "J0N4iAfhvqf80Zh5B8Hdtyqqce72"
-		},
-			"rating2":{
-			"isbn":"9781594137907",
-			"rating":3,
-			"uid": "J0N4iAfhvqf80Zh5B8Hdtyqqce72"
-		}
-	},
-	"users": {
-		"user0": {
-			"uid": "eR4LTE2ikiekr5PjbbUHEz8LJwf1",
-			"profilePic": "",
-			"username": "MilkyWay"
-		},
-		"user1": {
-			"uid": "J0N4iAfhvqf80Zh5B8Hdtyqqce72",
-			"profilePic": "",
-			"username": "Snickers"
-		}
-
-	}
+  "books" : {
+    "-KmY1Ks4btI8U2-yWd-E" : {
+      "borroweruid" : "",
+      "description" : "Brought back to the mortal world as the Winter Knight to Mab, Harry Dresden is at the command of the Queen of Air and Darkness and is expected to kill an immortal, as he begins to realize there is a serious threat to endanger countless innocent victims unless he finds his way out of eternal subservience.",
+      "imageLink" : "http://books.google.com/books/content?id=HDWMDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "isCheckedOut" : false,
+      "isbn" : "9780451419125",
+      "title" : "Cold Days",
+      "uid" : "iWU9TGP3oXZmYq75YqXVZqUVTxh2"
+    },
+    "-KmY1OayGesvgFFfGRvg" : {
+      "borroweruid" : "",
+      "description" : "“A can’t-miss entry in one of the best urban-fantasy series currently being published.”—Booklist (starred review) Long ago, Susan Rodriguez was Harry's Dresden’s lover—until she was attacked by his enemies, leaving her caught between humanity and the relentless bloodlust of the vampiric Red Court. She disappeared to South America, where she could fight both her savage gift and those who cursed her with it. Now, she needs Harry’s help more than ever. For the vengeful Duchess of the Red Court has discovered a secret Susan has long kept from everyone—including Harry—and she plans to use it. To prevail, Harry may have to unleash the full fury of his untapped power—and he may have no choice but to embrace the darkness within himself. Because this time, he’s fighting to save his child. From the Paperback edition.",
+      "imageLink" : "http://books.google.com/books/content?id=yOxZHZ0sb5wC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "isCheckedOut" : false,
+      "isbn" : "9781101186305",
+      "title" : "Changes",
+      "uid" : "iWU9TGP3oXZmYq75YqXVZqUVTxh2"
+    },
+    "-KmY1Si1dCFQp5-cSk3-" : {
+      "borroweruid" : "",
+      "description" : "Wizard detective Harry Dresden, murdered by an unknown assassin, must save his friends and his soul without any magic to help him in this novel from the New York Times best-selling author of Side Jobs. Reprint.",
+      "imageLink" : "http://books.google.com/books/content?id=77CJDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "isCheckedOut" : false,
+      "isbn" : "9780451464071",
+      "title" : "Ghost Story",
+      "uid" : "iWU9TGP3oXZmYq75YqXVZqUVTxh2"
+    },
+    "-KmY1YVRILAJk9eKKrTp" : {
+      "borroweruid" : "",
+      "description" : "An erotically charged, addictive thriller from the future queen of suspense. Living in Toronto for a year, Elena is leading the normal life she has always dreamed of, including a stable job as a journalist and a nice apartment shared with her boyfriend. As the lone female werewolf in existence, only her secret midnight prowls and her occasional inhuman cravings set her apart. Just one year ago, life was very different. Adopted by the Pack when bitten, Elena had spent years struggling with her resentment at having her life stolen away. Torn between two worlds, and overwhelmed by the new passions coursing through her body, her only option for control was to deny her awakening needs and escape. But now the Pack has called Elena home to help them fight an alliance of renegade werewolves who are bent on exposing and annihilating the Pack. And although Elena is obliged to rejoin her \"family,\" she vows not to be swept up in Pack life again, no matter how natural it might feel. She has made her choice. Trouble is, she's increasingly uncertain if it's the right one. An erotically charged thriller, Bitten will awaken the voracious appetite of every reader, as the age-old battle between man and beast, between human and inhuman forces, comes to a head in one small town and within one woman's body. From the Paperback edition.",
+      "imageLink" : "http://books.google.com/books/content?id=M5YbVHk9Wd4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "isCheckedOut" : false,
+      "isbn" : "9780307358783",
+      "title" : "Bitten",
+      "uid" : "iWU9TGP3oXZmYq75YqXVZqUVTxh2"
+    },
+    "-KmY1dPIPtxjEILZA2S4" : {
+      "borroweruid" : "",
+      "description" : "On the heels of the wildly popular \"The Darkest Powers\" series comes the first in another supernatural YA trilogy from New York Times bestelling author Kelley Armstrong. Maya lives in a small medical-research town on Vancouver Island. How small? You can't find it on the map. It has less than two-hundred people, and her school has only sixty-eight students — for every grade from kindergarten to twelve. Now, strange things are happening in this claustrophobic town, and Maya's determined to get to the bottom of them. First, the captain of the swim team drowns mysteriously in the middle of a calm lake. A year later, mountain lions start appearing around Maya's home, and they won't go away. Her best friend, Daniel, starts getting negative vibes from certain people and things. It doesn't help that the new bad boy in town, Rafe, has a dangerous secret — and he's interested in one special part of Maya's anatomy: Her paw-print birthmark. From the Hardcover edition.",
+      "imageLink" : "http://books.google.com/books/content?id=gf9hmsUWTvIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "isCheckedOut" : false,
+      "isbn" : "9780385668521",
+      "title" : "The Gathering",
+      "uid" : "iWU9TGP3oXZmYq75YqXVZqUVTxh2"
+    },
+    "-KmY1sJmm6GNIrV6Y9OV" : {
+      "borroweruid" : "",
+      "description" : "So Carlotta Wren's life hasn't turned out as she'd planned. She didn't plan for her parents to skip bail for a white-collar crime, leaving her to raise her brother. She didn't plan on having the silver spoon ripped from her mouth and forgoing college to work retail. She didn't plan on her blue-blood fiancé dumping her. And she didn't plan on still being single ten years later, working at Neiman Marcus, with no idea where her fugitive parents are. But she's coping. Until— —her lovable brother is arrested, and the hunky cop decides to reopen her parents' case. —her brother becomes a body mover for the morgue, and his sexy boss gets Carlotta involved. —her former fiancé's wife (a good customer) is murdered, fingering Carlotta. With three men in her life, Carlotta has added motivation to help bag a murderer to keep her own well-dressed body from being next on the list! Look for all six books in Stephanie Bond's Body Movers series, available now from Harlequin MIRA!",
+      "imageLink" : "http://books.google.com/books/content?id=cUUMb8zpkCUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "isCheckedOut" : false,
+      "isbn" : "9781460311776",
+      "title" : "Body Movers",
+      "uid" : "uRg1PRqDjtQHSMWGuUh0uyAZkcp2"
+    },
+    "-KmY1um175-X9fpvYeg2" : {
+      "borroweruid" : "",
+      "description" : "Happily never after... Carlotta Wren’s life has taken a startling turn—she’s not sure what’s going to happen next. So when her retail job temporarily plants her in the world of wedding planning, she’s happy for the distraction—at first. Because the happily-ever-after setting only heightens the stress surrounding the decisions she faces about her romantic life. The three hot men vying for her attention aren’t going to wait forever for her answer. On the other hand, at least the bridal show gets her away from body moving for a while, right? Wrong. Because when grooms all over Atlanta start dropping like flies, once again, Carlotta finds herself square in the middle of a murder mystery! “Body Movers is one of the most delightful series I have read in quite some time. Stephanie Bond shows her audience what a wickedly funny mystery should be all about.” Suspense Romance Writers Book Review “Stephanie Bond's Body Movers Series is an absolute hoot!” TheRomanceReadersConnection.com “Bond has successfully switched to the crime genre, bringing along her trademark humor and panache.” Booklist If you're looking for laugh-out-loud books, check out the BODY MOVERS series! To-date, titles in the series include: PARTY CRASHERS (prequel) BODY MOVERS 2 BODIES FOR THE PRICE OF 1 3 MEN AND A BODY 4 BODIES AND A FUNERAL 5 BODIES TO DIE FOR 6 KILLER BODIES 6 ½ BODY PARTS (novella) 7 BRIDES FOR 7 BODIES",
+      "imageLink" : "http://books.google.com/books/content?id=4wy6BgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "isCheckedOut" : false,
+      "isbn" : "9780991520916",
+      "title" : "7 Brides for 7 Bodies",
+      "uid" : "uRg1PRqDjtQHSMWGuUh0uyAZkcp2"
+    },
+    "-KmY1xCBvy2m9EIjXPXo" : {
+      "borroweruid" : "",
+      "description" : "With fugitive parents, a brother dodging loan sharks, a hunky cop who's made her outlaw family his business, a buff body mover looking to make a move on her and her ex-fiancé back in the picture, Carlotta Wren thought her life couldn't get any more complicated. And then… Her best friend jumps on the body-moving bandwagon. Her fugitive parents phone home. Her identity is stolen by a look-alike. Her look-alike is found, well…dead. Under suspicion for murder, Carlotta discovers that her devious double might've been bumped off accidentally—and that she could be the real target! Throw in dealing with her motley crew of family, friends and wannabe lovers, and Carlotta begins to think that jail isn't such a bad alternative after all.…",
+      "imageLink" : "http://books.google.com/books/content?id=MUItf8w3gV0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "isCheckedOut" : false,
+      "isbn" : "9781426816437",
+      "title" : "Body Movers: 2 Bodies for the Price of 1",
+      "uid" : "uRg1PRqDjtQHSMWGuUh0uyAZkcp2"
+    },
+    "-KmY2-HXjxsVX1YlAr7J" : {
+      "borroweruid" : "",
+      "description" : "THE #1 INTERNATIONAL BESTSELLER WITH OVER 10 MILLION COPIES IN PRINT! A timeless business classic, Who Moved My Cheese? uses a simple parabel to reveal profound truths about dealing with change so that you can enjoy less stress and more success in your work and in your life. It would be all so easy if you had a map to the Maze. If the same old routines worked. If they'd just stop moving \"The Cheese.\" But things keep changing... Most people are fearful of change, both personal and professional, because they don't have any control over how or when it happens to them. Since change happens either to the individual or by the individual, Dr. Spencer Johnson, the coauthor of the multimillion bestseller The One Minute Manager, uses a deceptively simple story to show that when it comes to living in a rapidly changing world, what matters most is your attitude. Exploring a simple way to take the fear and anxiety out of managing the future, Who Moved My Cheese? can help you discover how to anticipate, acknowledge, and accept change in order to have a positive impact on your job, your relationships, and every aspect of your life.",
+      "imageLink" : "http://books.google.com/books/content?id=HXQDqU1zfe0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "isCheckedOut" : false,
+      "isbn" : "1101495871",
+      "title" : "Who Moved My Cheese?",
+      "uid" : "uRg1PRqDjtQHSMWGuUh0uyAZkcp2"
+    },
+    "-KmY249pH2X8lKNOcHVD" : {
+      "borroweruid" : "",
+      "description" : "Renowned hip-hop artist, writer, and activist Sister Souljah brings the streets of New York to life in a powerful and utterly unforgettable first novel. I came busting into the world during one of New York's worst snowstorms, so my mother named me Winter. Ghetto-born, Winter is the young, wealthy daughter of a prominent Brooklyn drug-dealing family. Quick-witted, sexy, and business-minded, she knows and loves the streets like the curves of her own body. But when a cold Winter wind blows her life in a direction she doesn't want to go, her street smarts and seductive skills are put to the test of a lifetime. Unwilling to lose, this ghetto girl will do anything to stay on top. The Coldest Winter Ever marks the debut of a gifted storyteller. You will never forget this Winter's tale.",
+      "imageLink" : "http://books.google.com/books/content?id=q4z6l8UE4kIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "isCheckedOut" : false,
+      "isbn" : "143911997X",
+      "title" : "The Coldest Winter Ever",
+      "uid" : "uRg1PRqDjtQHSMWGuUh0uyAZkcp2"
+    },
+    "-KmY2NSD_vUcYxS-rWfY" : {
+      "borroweruid" : "",
+      "description" : "The Harry Potter series forms a single epic story that has been published in nearly 70 languages, and has been examined in a large number of disciplines. This collection of essays contributes to the scholarly discourse that forms Potter Studies. These essays take on the consideration of Rowling's work as being worthy of study as a phenomenon and influence, as well as a work of literary value. They add genuine statistical information about the reasons for the books' popularity, consider their effects on child readers, and examine some deep-rooted reasons for their having been manipulated in American publishing, in film adaptations, in musical complements, and in their thingification in popular culture around the world. Some of these essays take on the critics of the books' religion and considerations of psychological, as well as philosophical good and evil, and well as some stylistic anomalies. The fact that scholars from China, Germany, Poland, Romania, and Israel, in addition to English-speaking nations, have felt compelled to examine these books in detail testifies in part to Harry Potter's world-wide influence.",
+      "imageLink" : "http://books.google.com/books/content?id=ThAaBwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "isCheckedOut" : false,
+      "isbn" : "9781443816281",
+      "title" : "Harry Potter’s World Wide Influence",
+      "uid" : "uRg1PRqDjtQHSMWGuUh0uyAZkcp2"
+    },
+    "-KmY2mS_MobOyAMCPTk6" : {
+      "borroweruid" : "",
+      "description" : "In all his years of supernatural sleuthing, Harry Dresden has never faced anything like this: the spirit world's gone postal. These ghosts are tormented, violent, and deadly. Someone-or something-is purposely stirring them up to wreak unearthly havoc. But why? If Harry doesn't figure it out soon, he could wind up a ghost himself.",
+      "imageLink" : "http://books.google.com/books/content?id=k_Lit-EU4FcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "isCheckedOut" : false,
+      "isbn" : "9781440653902",
+      "title" : "Grave Peril",
+      "uid" : "gL7ITJ74LLYkbcnfIdsSeVQoJ253"
+    },
+    "-KmY2vrKh2GnWK6WjG-l" : {
+      "borroweruid" : "",
+      "description" : "In the fourth novel in the #1 New York Times bestselling series featuring everyone's favorite wizard for hire, Harry Dresden is suckered into the tangled—and dangerous—affairs of Faerie... Ever since his girlfriend left town to deal with her newly acquired taste for blood, Harry Dresden has been down and out in Chicago. He can’t pay his rent. He’s alienating his friends. He can’t even recall the last time he took a shower. The only professional wizard in the phone book has become a desperate man. And just when it seems things can’t get any worse, in saunters the Winter Queen of Faerie. She has an offer Harry can’t refuse if he wants to free himself of the supernatural hold his faerie godmother has over him—and hopefully end his run of bad luck. All he has to do is find out who murdered the Summer Queen’s right-hand man, the Summer Knight, and clear the Winter Queen’s name. It seems simple enough, but Harry knows better than to get caught in the middle of faerie politics. Until he finds out that the fate of the entire world rests on his solving this case. No pressure or anything...",
+      "imageLink" : "http://books.google.com/books/content?id=ev4SpwTuQ4UC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "isCheckedOut" : false,
+      "isbn" : "9781101133941",
+      "title" : "Summer Knight",
+      "uid" : "gL7ITJ74LLYkbcnfIdsSeVQoJ253"
+    },
+    "-KmY31S8xU3djjRrjvjp" : {
+      "borroweruid" : "",
+      "description" : "With fugitive parents, a brother dodging loan sharks, a hunky cop who's made her outlaw family his business, a buff body mover looking to make a move on her and her ex-fiancé back in the picture, Carlotta Wren thought her life couldn't get any more complicated. And then... Her best friend jumps on the body-moving bandwagon. Her fugitive parents phone home. Her identity is stolen by a look-alike. Her look-alike is found, well...dead. Under suspicion for murder, Carlotta discovers that her devious double might've been bumped off accidentally--and that she could be the real target! Throw in dealing with her motley crew of family, friends and wannabe lovers, and Carlotta begins to think that jail isn't such a bad alternative after all....",
+      "imageLink" : "http://books.google.com/books/content?id=F7rWP5b3cgcC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "isCheckedOut" : false,
+      "isbn" : "9781460308615",
+      "title" : "Body Movers: 2 Bodies for the Price of 1",
+      "uid" : "gL7ITJ74LLYkbcnfIdsSeVQoJ253"
+    },
+    "-KmY39mil16RVhHPSork" : {
+      "borroweruid" : "",
+      "description" : "When the corpse of a brutally mutilated murder victim turns up at the time of the full moon, accompanied by some most unusual paw prints, professional wizard and supernatural investigator Harry Dresden finds himself searching Chicago for the werewolf stalking the city. Original.",
+      "imageLink" : "http://books.google.com/books/content?id=pFBA4o6VZPYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+      "isCheckedOut" : false,
+      "isbn" : "0451458125",
+      "title" : "Fool Moon",
+      "uid" : "gL7ITJ74LLYkbcnfIdsSeVQoJ253"
+    },
+    "book0" : {
+      "author" : "John Green",
+      "borroweruid" : "eR4LTE2ikiekr5PjbbUHEz8LJwf1",
+      "description" : "kjvsbnfkvskj hev nlsnlshvi ioh fcv sio nvlksn hiaojcio oef",
+      "imageLink" : "http://books.google.com/books/content?id=UzqVUdEtLDwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "isCheckedOut" : true,
+      "isbn" : "9781594137907",
+      "title" : "The Fault In Our Stars",
+      "uid" : "J0N4iAfhvqf80Zh5B8Hdtyqqce72"
+    },
+    "book1" : {
+      "author" : "Margaret Atwood",
+      "borroweruid" : "iWU9TGP3oXZmYq75YqXVZqUVTxh2",
+      "description" : "sjvnkjwsnvksn iewnf vcajoivhjsw  ivw ovivn o wn von ih l",
+      "imageLink" : "http://books.google.com/books/content?id=tIceOIzTQfgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "isCheckedOut" : true,
+      "isbn" : "9780770422639",
+      "title" : "A Handmaid's Tale",
+      "uid" : "J0N4iAfhvqf80Zh5B8Hdtyqqce72"
+    },
+    "book2" : {
+      "author" : "Max Lucado",
+      "borrowerUid" : "eR4LTE2ikiekr5PjbbUHEz8LJwf1",
+      "description" : "snjfnvskj iohviwnv nvlki vohwso iowjhionvls l wjviwamvkls ",
+      "imageLink" : "http://books.google.com/books/content?id=ZFWYwblGRzwC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "isCheckedOut" : false,
+      "isbn " : "9781418585204 ",
+      "title" : "Facing Your Giants",
+      "uid" : "J0N4iAfhvqf80Zh5B8Hdtyqqce72"
+    },
+    "book3" : {
+      "author" : "Jim Butcher",
+      "borrowerUid" : "J0N4iAfhvqf80Zh5B8Hdtyqqce72",
+      "description" : "grvnen lz v ifan falkmnn gflewniv laeninv aio jg ngvlkd ng",
+      "imageLink" : "http://books.google.com/books/content?id=gdEBDAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "isCheckedOut" : false,
+      "isbn" : "9780965725569",
+      "title" : "Storm Front",
+      "uid" : "eR4LTE2ikiekr5PjbbUHEz8LJwf1"
+    }
+  },
+  "ratings" : {
+    "rating0" : {
+      "isbn" : "9781480581227",
+      "rating" : 5,
+      "uid" : "eR4LTE2ikiekr5PjbbUHEz8LJwf1"
+    },
+    "rating1" : {
+      "isbn" : "9780965725590",
+      "rating" : 5,
+      "uid" : "J0N4iAfhvqf80Zh5B8Hdtyqqce72"
+    },
+    "rating2" : {
+      "isbn" : "9781594137907",
+      "rating" : 3,
+      "uid" : "J0N4iAfhvqf80Zh5B8Hdtyqqce72"
+    }
+  },
+  "users" : {
+    "-KmX8v_f4w-DAxrQLA1x" : {
+      "uid" : "iWU9TGP3oXZmYq75YqXVZqUVTxh2"
+    },
+    "-KmX9-wETxu4oqSC9FfM" : {
+      "uid" : "uRg1PRqDjtQHSMWGuUh0uyAZkcp2",
+      "username" : "David"
+    },
+    "-KmX93IqOMwiTis8qsfy" : {
+      "uid" : "gL7ITJ74LLYkbcnfIdsSeVQoJ253",
+      "username" : "Eddie"
+    },
+    "-KmX96nlnViQ3oSGBAzB" : {
+      "uid" : "n7Y9Ao8kmzLb7E0JezTKbw4GnkH3",
+      "username" : "Frank"
+    },
+    "-KmX9AJzhTAxbpnElcT6" : {
+      "uid" : "dUQ3ZB8FnEa9M7cdLaUNMTi2kff2",
+      "username" : "George"
+    },
+    "user0" : {
+      "profilePic" : "",
+      "uid" : "eR4LTE2ikiekr5PjbbUHEz8LJwf1",
+      "username" : "MilkyWay"
+    },
+    "user1" : {
+      "profilePic" : "",
+      "uid" : "J0N4iAfhvqf80Zh5B8Hdtyqqce72",
+      "username" : "Snickers"
+    }
+  }
 }

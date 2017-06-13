@@ -18,14 +18,14 @@
  <div class="clearfix"></div>
 
 <div ng-repeat="item in books | filter: searchText">
-  <div class="row">
+  <!-- <div class="row"> -->
     <div class="col-xs-6 col-md-4">
-		<h3>
+		<h3 class="text-center">
 			<a ng-href="#!/book/view/{{item.id}}">{{item.title}}</a>
 		</h3>
-			<img ng-src="{{item.imageLink}}" alt="">
+			<img class="center-block" ng-src="{{item.imageLink}}" alt=""><br>
 			<button class="center-block" ng-click="checkoutBook()">Checkout</button>  <!-- This function doesn't work ***MUST FIX-->
-      </div>
+     <!--  </div> -->
     </div>
   </div>
 
