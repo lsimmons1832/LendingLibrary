@@ -8,7 +8,7 @@ let isAuth = (AuthFactory) => new Promise ((resolve, reject) => {
   }
 });
 
-app.run(function($location, $rootScope, FIREBASE_CONFIG, AuthFactory) {
+app.run(function($location, $rootScope, FIREBASE_CONFIG, AuthFactory, GOOGLE_BOOKS) {
   firebase.initializeApp(FIREBASE_CONFIG);
 
   //watch method that fires on change of a route.  3 inputs. 

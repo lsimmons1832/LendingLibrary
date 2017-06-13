@@ -2,8 +2,8 @@ app.controller("AuthCtrl", function($location, $rootScope, $scope, AuthFactory, 
 	$scope.alerts = [];
 
 	$scope.auth = {
-		// email: "",
-		// password: ""
+		email: "b@b.com",
+		password: "123456"
 	};
 
 	if($location.path() === '/logout'){
@@ -14,7 +14,6 @@ app.controller("AuthCtrl", function($location, $rootScope, $scope, AuthFactory, 
 
 	let logMeIn = () => {
 		AuthFactory.authenticate($scope.auth).then((userCreds)=>{
-			//console.log("userCreds", userCreds);
 			return UserFactory.getUser(userCreds.uid);
 		}, (error)=>{
 			$scope.alerts.push({msg: error.message});
@@ -29,13 +28,11 @@ app.controller("AuthCtrl", function($location, $rootScope, $scope, AuthFactory, 
 	};
 
 	$scope.registerUser = () =>{
-		//create new auth
 		AuthFactory.registerWithEmail($scope.auth).then((didRegister) =>{
 			console.log("didRegister", didRegister);
-		//adding username
 			$scope.auth.uid = didRegister.uid;
 			return UserFactory.addUser($scope.auth);
-		}, (error) => { //this is another way of writing a catch when you have multiple thens
+		}, (error) => { 
 			console.log("registerWithEmail error", error);
 		}).then((registerComplete) =>{
 			logMeIn();
@@ -43,7 +40,6 @@ app.controller("AuthCtrl", function($location, $rootScope, $scope, AuthFactory, 
 			console.log("addUser error", error);
 		});
 
-		//login	
 	};
 
 	$scope.loginUser = () =>{

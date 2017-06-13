@@ -2,15 +2,15 @@
   <div class="col-lg-4 col-lg-offset-4">
     <div class="input-group">
       <div class="input-group-btn">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ng-model="dropDown">Action <span class="caret"></span></button>
         <ul class="dropdown-menu">
-          <li class="dropdownType"><a href="#">Author</a></li>
-          <li class="dropdownType"><a href="#">Title</a></li>
+          <li class="dropDown" ><a ng-click="setdropDown('inauthor')">Author</a></li>
+          <li class="dropDown"><a  ng-click="setdropDown('intitle')">Title</a></li>
         </ul>
       </div>
       <input id="search" type="text" class="form-control" placeholder="Search for..." ng-model="searchText">
 		<span class="input-group-btn">
-			<button class="btn btn-default" type="button">Go!</button>
+			<button class="btn btn-default" type="button" ng-click="getNewBooks()">Go!</button>
 		</span>
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
