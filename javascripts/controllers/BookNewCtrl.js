@@ -1,4 +1,4 @@
-app.controller("BookNewCtrl", function($scope, BookFactory, GOOGLE_BOOKS){
+app.controller("BookNewCtrl", function($rootScope, $scope, BookFactory, GOOGLE_BOOKS){
 		$scope.books = [];
 		$scope.dropDown ="";
 		$scope.searchText = "";
