@@ -19,16 +19,39 @@ app.factory("BookFactory", function($http, $q, FIREBASE_CONFIG, GOOGLE_BOOKS){
 		});
 	};
 
-	let getMyBooks = (uid) => {
+		let getBooks= (uid) =>{
+		let bookz = [];
+		return $q((resolve,reject) =>{
+			$http.get(`${FIREBASE_CONFIG.databaseURL}/books.json?orderBy="borrowerUid"&equalTo="${uid}"`)
+			.then((fbBooks) =>{
+				var bookCollection = fbBooks.data;
+				if(bookCollection !== null){
+					Object.keys(bookCollection).forEach((key)=>{
+						bookCollection[key].id=key;
+						bookz.push(bookCollection[key]);
+					});
+				}
+				resolve(bookz);
+			}).catch((error)=>{
+				reject(error);
+			});
+		});
+	};
+
+
+
+	let getMyBooks = (userId) => {
+		console.log("what am I passing in", userId);
 		let myBooks = [];
 		return $q((resolve, reject) => {
-			$http.get(`${FIREBASE_CONFIG.databaseURL}/books.json?orderBy='uid'&equalTo=${uid}`)
+			$http.get(`${FIREBASE_CONFIG.databaseURL}/books.json?orderBy="uid"&equalTo="${userId}"`)
 			.then((fbBookz) =>{
 				let bookCollection = fbBookz.data;
-				if(bookColletion !== null){
+				if(bookCollection !== null){
 					Object.keys(bookCollection).forEach((key) => {
-					bookCOllection[key].bookId = key;
+					bookCollection[key].bookId = key;
 					myBooks.push(bookCollection[key]);
+					console.log("show my books", myBooks);
 					});
 				}
 				resolve(myBooks);
@@ -74,7 +97,7 @@ app.factory("BookFactory", function($http, $q, FIREBASE_CONFIG, GOOGLE_BOOKS){
 	// console.log("searchText", searchText);
 	let getGoogleBooksByTitle = (dropDown, searchText, key) =>{
 		return $q((resolve, reject) =>{
-			$http.get(`${GOOGLE_BOOKS.databaseURL}${dropDown}:${searchText}&key=${key}`)
+			$http.get(`${GOOGLE_BOOKS.databaseURL}+${dropDown}:${searchText}&key=${key}`)
 			.then((data) =>{
 				resolve(data);
 			}).catch((error) =>{
@@ -85,7 +108,7 @@ app.factory("BookFactory", function($http, $q, FIREBASE_CONFIG, GOOGLE_BOOKS){
 	
 	let postNewBook = (newBook) =>{
 		return $q ((resolve, reject) =>{
-			console.log("what am I sending", newBook.title);
+			console.log("what am I sending", newBook);
 			$http.post(`${FIREBASE_CONFIG.databaseURL}/books.json`, 
 			JSON.stringify({
 					isCheckedOut: newBook.isCheckedOut,
@@ -105,5 +128,7 @@ app.factory("BookFactory", function($http, $q, FIREBASE_CONFIG, GOOGLE_BOOKS){
 		});
 	};
 
-	return{getBookList: getBookList, getBookDetails: getBookDetails, borrowBook: borrowBook, getMyBooks: getMyBooks, getGoogleBooksByTitle: getGoogleBooksByTitle, postNewBook: postNewBook};
+
+
+	return{getBookList: getBookList, getBooks: getBooks, getBookDetails: getBookDetails, borrowBook: borrowBook, getMyBooks: getMyBooks, getGoogleBooksByTitle: getGoogleBooksByTitle, postNewBook: postNewBook};
 });
