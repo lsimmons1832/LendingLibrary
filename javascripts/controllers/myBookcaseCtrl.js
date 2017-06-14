@@ -13,7 +13,7 @@
 		});
 	};
 
-	//getMyBooks();
+	getMyBooks();
 
 	let myBorrowedBooks = () => {
 		BookFactory.getBooks($rootScope.user.uid)
@@ -25,6 +25,6 @@
 		});
 	};
 
-	myBorrowedBooks();
+	//myBorrowedBooks();
 
 	});
