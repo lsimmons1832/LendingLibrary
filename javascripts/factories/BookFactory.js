@@ -20,7 +20,6 @@ app.factory("BookFactory", function($http, $q, FIREBASE_CONFIG, GOOGLE_BOOKS){
 	};
 
 	let getBooks= (borrower) =>{
-		console.log("what am I passing in", borrower);
 		let loans = [];
 		return $q((resolve,reject) =>{
 			$http.get(`${FIREBASE_CONFIG.databaseURL}/books.json?orderBy="borroweruid"&equalTo="${borrower}"`)
@@ -30,7 +29,6 @@ app.factory("BookFactory", function($http, $q, FIREBASE_CONFIG, GOOGLE_BOOKS){
 					Object.keys(bookCollection).forEach((key)=>{
 						bookCollection[key].id=key;
 						loans.push(bookCollection[key]);
-					console.log("show my books", loans);
 					});
 				}
 				resolve(loans);

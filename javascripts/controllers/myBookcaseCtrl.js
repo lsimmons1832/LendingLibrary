@@ -7,7 +7,6 @@
 		BookFactory.getMyBooks($rootScope.user.uid)
 		.then((userBooks)=>{
 			$scope.myBooks = userBooks;
-			console.log("Books I own", userBooks);
 		}).catch((error) => {
 			console.log("getUser books error", error);
 		});
@@ -19,7 +18,6 @@
 		BookFactory.getBooks($rootScope.user.uid)
 		.then((loans) =>{
 			$scope.borrowedBooks = loans;
-			console.log("my borrowed books", loans);
 		}).catch((error) =>{
 			console.log("error getting borrowed books", error);
 		});
@@ -28,6 +26,7 @@
 	myBorrowedBooks();
 	
 	$scope.deleteBook = (id) => {
+	console.log("show id passed in", id);
 		BookFactory.removeBook(id).then(() => {
 			getMyBooks();
 		}).catch((error) =>{
