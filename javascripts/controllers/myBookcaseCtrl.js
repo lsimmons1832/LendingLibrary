@@ -2,6 +2,7 @@
 	
 	$scope.myBooks = [];
 	$scope.borrowedBooks = [];
+	$scope.book = [];
 	
 		let getMyBooks = () => {
 		BookFactory.getMyBooks($rootScope.user.uid)
@@ -33,8 +34,11 @@
 		});
 	};
 	
-	$scope.returnBook = (id) =>{
-		BookFactory.returnBook(id).then(() => {
+	$scope.returnBook = (book) =>{
+console.log("what's book", book);
+		$scope.book.isCheckedOut = false;
+		$scope.book.borrowerUid = "";
+		BookFactory.bookReturn(book).then(() => {
 		  myBorrowedBooks();
 		}).catch(() => {
 			console.log("Error returning the book", error);

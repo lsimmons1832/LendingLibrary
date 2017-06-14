@@ -137,7 +137,37 @@ app.factory("BookFactory", function($http, $q, FIREBASE_CONFIG, GOOGLE_BOOKS){
 		});
 	};
 
+	let bookReturn = (book) => {
+		return $q((resolve, reject) => {
+			$http.put(`${FIREBASE_CONFIG.databaseURL}/books/${book.id}.json`,
+			JSON.stringify({
+				isCheckedOut: book.isCheckedOut,
+				title: book.title,
+				imageLink: book.imageLink,
+				author: book.author,
+				description: book.description,
+				isbn: book.isbn,
+				uid: book.uid,
+				borroweruid: book.borrowerUid	
+			})
+			).then(() => {
+				resolve();
+			}).catch((error) => {
+				reject(error);
+			});
+		});
+	};
 
 
-	return{getBookList: getBookList, getBooks: getBooks, getBookDetails: getBookDetails, borrowBook: borrowBook, getMyBooks: getMyBooks, getGoogleBooksByTitle: getGoogleBooksByTitle, postNewBook: postNewBook, removeBook: removeBook};
+
+	return{getBookList: getBookList, 
+		   getBooks: getBooks, 
+		   getBookDetails: getBookDetails, 
+		   borrowBook: borrowBook, 
+		   getMyBooks: getMyBooks, 
+		   getGoogleBooksByTitle: getGoogleBooksByTitle, 
+		   postNewBook: postNewBook, 
+		   removeBook: removeBook,
+		   bookReturn: bookReturn
+			};
 });
