@@ -7,6 +7,7 @@
 		BookFactory.getMyBooks($rootScope.user.uid)
 		.then((userBooks)=>{
 			$scope.myBooks = userBooks;
+			console.log("myBooks", userBooks);
 		}).catch((error) => {
 			console.log("getUser books error", error);
 		});

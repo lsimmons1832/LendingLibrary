@@ -10,26 +10,26 @@
   }
 </style>
 
-<div ng-controller="myBookcaseCtrl">
+<!-- <div ng-controller="myBookcaseCtrl"> -->
   <uib-tabset active="activeJustified" justified="true">
     <uib-tab index="0" heading="My Collection" active="activeForm">
 	  <div class="col-xs-6 col-md-4" ng-repeat="item in myBooks">
 		<h3>
-			<a ng-href="#!/book/view/{{item.id}}">{{item.title}}</a>
+			<a ng-href="#!/book/view/{{item.bookId}}">{{item.title}}</a>
 		</h3>
 			<img ng-src="{{item.imageLink}}" alt="">
-			<button class="center-block" ng-click="deleteBook(item.id)">Remove From Collection</button>  
+			<button class="center-block" ng-click="deleteBook(item.bookId)">Remove From Collection</button>  
       </div>
   </uib-tab>
   <uib-tab index="1" heading="Borrowed Books" active="activeForm">
       <div class="col-xs-6 col-md-4" ng-repeat="book in borrowedBooks">
 		<h3>
-			<a ng-href="#!/book/view/{{item.id}}">{{book.title}}</a>
+			<a ng-href="#!/book/view/{{book.id}}">{{book.title}}</a>
 		</h3>
 		<img ng-src="{{book.imageLink}}" alt="">
 		<button class="center-block" ng-click="returnBook()">Return Book</button>  
 	  </div>
   </uib-tab>
 </uib-tabset>
-</div>
+<!-- </div> -->
   <hr /> 
