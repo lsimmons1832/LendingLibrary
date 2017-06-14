@@ -1,9 +1,27 @@
 <div uib-alert ng-repeat="alert in alerts" class="alert-danger">{{alert.msg}}</div>
 
 <div class="container col-xs-4 col-xs-offset-4">
+ <div class="input-group">
+	<span class="input-group-btn">
+		<button class="btn btn-default glyphicon glyphicon-envelope" type="button"></button>
+	</span>
   <input type="email" class="form-control form-spacing" placeholder="Email Address"  ng-model="auth.email" required autofocus>
+</div>
+  
+ <div class="input-group">
+  <span class="input-group-btn">
+		<button class="btn btn-default glyphicon glyphicon-asterisk" type="button"></button>
+	</span>
   <input type="password" class="form-control form-spacing" placeholder="Password" ng-model="auth.password" required>
+</div>  
+
+ <div class="input-group">
+  <span class="input-group-btn">
+		<button class="btn btn-default glyphicon glyphicon glyphicon-user" type="button"></button>
+	</span>
   <input type="text" class="form-control form-spacing" placeholder="Username" ng-model="auth.username" required>
+</div><br>
   <a class="btn btn-lg btn-success col-xs-6" ng-click="loginUser()">Login</a>
   <a class="btn btn-lg btn-primary col-xs-6" ng-click="registerUser()">Register</a>
 </div>
+
