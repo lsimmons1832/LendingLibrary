@@ -106,7 +106,6 @@ app.factory("BookFactory", function($http, $q, FIREBASE_CONFIG, GOOGLE_BOOKS){
 	
 	let postNewBook = (newBook) =>{
 		return $q ((resolve, reject) =>{
-			console.log("what am I sending", newBook);
 			$http.post(`${FIREBASE_CONFIG.databaseURL}/books.json`, 
 			JSON.stringify({
 					isCheckedOut: newBook.isCheckedOut,
