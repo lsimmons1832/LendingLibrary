@@ -195,31 +195,37 @@
   },
   "users" : {
     "-KmX8v_f4w-DAxrQLA1x" : {
-      "uid" : "iWU9TGP3oXZmYq75YqXVZqUVTxh2"
+      "uid" : "iWU9TGP3oXZmYq75YqXVZqUVTxh2",
+	  "username" : "Apple",
+	  "profilePic": "http://placeimg.com/80/80/people"
     },
     "-KmX9-wETxu4oqSC9FfM" : {
       "uid" : "uRg1PRqDjtQHSMWGuUh0uyAZkcp2",
-      "username" : "David"
+      "username" : "David",
+	  "profilePic": "http://placeimg.com/80/80/nature"
     },
     "-KmX93IqOMwiTis8qsfy" : {
       "uid" : "gL7ITJ74LLYkbcnfIdsSeVQoJ253",
-      "username" : "Eddie"
+      "username" : "Eddie",
+	  "profilePic": "http://placeimg.com/80/80/arch"
     },
     "-KmX96nlnViQ3oSGBAzB" : {
       "uid" : "n7Y9Ao8kmzLb7E0JezTKbw4GnkH3",
-      "username" : "Frank"
+      "username" : "Frank",
+	  "profilePic": "http://placeimg.com/80/80/animals"
     },
     "-KmX9AJzhTAxbpnElcT6" : {
       "uid" : "dUQ3ZB8FnEa9M7cdLaUNMTi2kff2",
-      "username" : "George"
+      "username" : "George",
+	  "profilePic": "http://placeimg.com/80/80/tech/grayscale"
     },
     "user0" : {
-      "profilePic" : "",
+      "profilePic" : "http://placeimg.com/80/80/nature/sepia",
       "uid" : "eR4LTE2ikiekr5PjbbUHEz8LJwf1",
       "username" : "MilkyWay"
     },
     "user1" : {
-      "profilePic" : "",
+      "profilePic" : "http://placeimg.com/80/80/animals/sepia",
       "uid" : "J0N4iAfhvqf80Zh5B8Hdtyqqce72",
       "username" : "Snickers"
     }

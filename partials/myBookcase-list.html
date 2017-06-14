@@ -1,11 +1,14 @@
-<h1>Hello, </h1>
+<div>
+	<img class="img-circle center-block" src="{{user.profilePic}}"><h3 class="text-center">Hello, {{user.username}}</h3>
+</div>
+		
 <div ng-repeat="item in myBooks">
-<!-- <ul class="nav-tabs">
+<ul class="nav-tabs">
   <li role="presentation" class="active"><a href="#">Home</a></li>
   <li role="presentation"><a href="#">Profile</a></li>
   <li role="presentation"><a href="#">Messages</a></li>
 </ul>
- -->  <div>
+  <div>
     <div class="col-xs-6 col-md-4">
 		<h3>
 			<a ng-href="#!/book/view/{{item.uid}}">{{item.title}}</a>
