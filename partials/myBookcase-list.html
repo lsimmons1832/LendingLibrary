@@ -1,0 +1,17 @@
+<h1>Hello, </h1>
+<div ng-repeat="item in myBooks">
+<!-- <ul class="nav-tabs">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+ -->  <div>
+    <div class="col-xs-6 col-md-4">
+		<h3>
+			<a ng-href="#!/book/view/{{item.uid}}">{{item.title}}</a>
+		</h3>
+			<img ng-src="{{item.imageLink}}" alt="">
+			<button class="center-block" ng-click="deleteBook()">Remove From Collection</button>  
+      </div>
+    </div>
+  </div>

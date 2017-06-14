@@ -19,14 +19,6 @@ app.controller("BookNewCtrl", function($location, $rootScope, $scope, BookFactor
 	
 	$scope.newBook= {};
 	
-	//$scope.captureBookData = () =>{
-	//	$scope.newBook.title;
-	//	$scope.newBook.imageLink;
-	//	$scope.newBook.author;
-	//	$scope.newBook.description;
-	//	$scope.newBook.isbn;
-	//}
-
 		$scope.addNewBook = (item) => {
 			$scope.newBook = item;
 			$scope.newBook.isCheckedOut = false;

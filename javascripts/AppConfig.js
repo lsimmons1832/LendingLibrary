@@ -50,8 +50,8 @@ app.config(function ($routeProvider) {
 			resolve : {isAuth}
 		})
 		.when('/books/list/user', {
-			templateUrl:'partials/book-list.html',
-			controller: 'BookListCtrl',
+			templateUrl:'partials/myBookcase-list.html',
+			controller: 'myBookcaseCtrl',
 			resolve : {isAuth}
 		})
 		.when('/books/new', {
