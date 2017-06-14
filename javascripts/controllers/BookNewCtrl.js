@@ -6,7 +6,7 @@ app.controller("BookNewCtrl", function($location, $rootScope, $scope, BookFactor
 
 		 $scope.setdropDown = (searchType) =>{
 			$scope.dropDown = searchType;
-		}
+		};
 
 		$scope.getNewBooks = () =>{
 		BookFactory.getGoogleBooksByTitle($scope.dropDown, $scope.searchText, key).then((bookz)=>{
@@ -15,7 +15,7 @@ app.controller("BookNewCtrl", function($location, $rootScope, $scope, BookFactor
 		}).catch((error)=>{
 			console.log('', error);
 		});
-	}
+	};
 	
 	$scope.newBook= {};
 	

@@ -1,4 +1,4 @@
-app.controller("BookListCtrl", function ($rootScope, $location, $rootScope, $scope, BookFactory) {
+app.controller("BookListCtrl", function ($scope, BookFactory) {
 	$scope.books = [];
 
 	let getBooks = () =>{
