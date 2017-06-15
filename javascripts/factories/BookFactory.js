@@ -72,6 +72,7 @@ app.factory("BookFactory", function($http, $q, FIREBASE_CONFIG, GOOGLE_BOOKS){
 };
 
 		let borrowBook = (book) => {
+			console.log("what is book", book);
 			return $q((resolve, reject) => {
 				$http.put(`${FIREBASE_CONFIG.databaseURL}/books/${book.id}.json`,
 				JSON.stringify({
@@ -82,7 +83,7 @@ app.factory("BookFactory", function($http, $q, FIREBASE_CONFIG, GOOGLE_BOOKS){
 					description: book.description,
 					isbn: book.isbn,
 					uid: book.uid,
-					borroweruid: book.borrowerUid	
+					borroweruid: book.borroweruid	
 				})
 			).then((results) =>{
 				resolve(results);

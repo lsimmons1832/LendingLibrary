@@ -1,17 +1,6 @@
 <div class="row">
   <div class="col-lg-4 col-lg-offset-4">
-    <div class="input-group">
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
-        <ul class="dropdown-menu">
-          <li><a href="#">Author</a></li>
-          <li><a href="#">Title</a></li>
-        </ul>
-      </div>
       <input type="text" class="form-control" placeholder="Search for..." ng-model="searchText">
-		<span class="input-group-btn">
-			<button class="btn btn-default" type="button">Go!</button>
-		</span>
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
 
@@ -24,7 +13,7 @@
 			<a ng-href="#!/book/view/{{item.id}}">{{item.title}}</a>
 		</h3>
 			<img class="center-block" ng-src="{{item.imageLink}}" alt=""><br>
-			<button class="center-block" ng-click="checkoutBook()">Checkout</button>  <!-- This function doesn't work ***MUST FIX-->
+			<button class="center-block" ng-click="checkoutBook(item)">Checkout</button>  <!-- This function doesn't work ***MUST FIX-->
      <!--  </div> -->
     </div>
   </div>

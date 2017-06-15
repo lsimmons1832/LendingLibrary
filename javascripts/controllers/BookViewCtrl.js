@@ -26,5 +26,17 @@ app.controller("BookViewCtrl", function($location, $rootScope, $routeParams, $sc
 		});
 	};
 
+	//TESTING UI-BOOTSTRAP RATING
+
+	$scope.rate = $scope.ratings;
+  $scope.max = 10;
+  $scope.isReadonly = false;
+
+  $scope.hoveringOver = function(value) {
+    $scope.overStar = value;
+    $scope.percent = 100 * (value / $scope.max);
+  };
+
+
 
 });
