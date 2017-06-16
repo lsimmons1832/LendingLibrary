@@ -21,7 +21,7 @@
     <div class="col-xs-6 col-sm-4">
 		<h3 class="text-center">{{item.volumeInfo.title}}</h3>
 			<img class="center-block" ng-src="{{item.volumeInfo.imageLinks.thumbnail}}" alt="" >
-			<h4 class="text-center">{{item.volumeInfo.authors}}</h4>
+			<h4 class="text-center">{{item.volumeInfo.authors[0]}}</h4>
 			<h5 class="text-center" >{{item.volumeInfo.description}}</h5>
 			<h5>{{item.volumeInfo.industryIdentifiers[0].type}}: </h5>
 			<h5 class="text-center">{{item.volumeInfo.industryIdentifiers[0].identifier}}</h5>
