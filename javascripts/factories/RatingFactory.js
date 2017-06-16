@@ -18,6 +18,23 @@ app.factory("RatingFactory", function($http, $q, FIREBASE_CONFIG){
 			});
 		});
 	};
-    
-	return{getRatings:getRatings};
+
+	let rateBook = (rate, isbn, uid) =>{
+    return $q((resolve, reject) =>{
+    	$http.post(`${FIREBASE_CONFIG.databaseURL}/ratings.json`, JSON.stringify({
+    		rating: rate,
+    		isbn: isbn,
+    		uid: uid
+    	})
+    	).then((data) =>{
+    		resolve(data);
+    	}).catch((error) =>{
+    		reject(error);
+    	});
+
+    });
+	};
+
+
+	return{getRatings:getRatings, rateBook: rateBook};
 });
