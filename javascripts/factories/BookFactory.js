@@ -113,7 +113,7 @@ app.factory("BookFactory", function($http, $q, FIREBASE_CONFIG, GOOGLE_BOOKS){
 					isCheckedOut: newBook.isCheckedOut,
 					title: newBook.title,
 					imageLink: newBook.imageLinks.thumbnail,
-					author: newBook.authors,
+					author: newBook.authors[0],
 					description: newBook.description,
 					isbn: newBook.industryIdentifiers[0].identifier,
 					uid: newBook.uid,
