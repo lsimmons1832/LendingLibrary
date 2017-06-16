@@ -18,7 +18,7 @@
 			<a ng-href="#!/book/view/{{item.bookId}}">{{item.title}}</a>
 		</h3>
 			<img ng-src="{{item.imageLink}}" alt="">
-			<button class="center-block" ng-click="deleteBook(item.bookId)">Remove From Collection</button>  
+			<button class="btn center-block" ng-click="deleteBook(item.bookId)">Remove From Collection</button>  
       </div>
   </uib-tab>
   <uib-tab index="1" heading="Borrowed Books" active="activeForm">
@@ -27,7 +27,7 @@
 			<a ng-href="#!/book/view/{{book.id}}">{{book.title}}</a>
 		</h3>
 		<img ng-src="{{book.imageLink}}" alt="">
-		<button class="center-block" ng-click="returnBook(book)">Return Book</button>  
+		<button class="btn center-block" ng-click="returnBook(book)">Return Book</button>  
 	  </div>
   </uib-tab>
 </uib-tabset>

@@ -43,6 +43,7 @@ app.controller("BookViewCtrl", function($location, $rootScope, $routeParams, $sc
  	$scope.rate = rate;
  	RatingFactory.rateBook($scope.rate, book.isbn, book.borroweruid).then(() =>{
  		$location.url('/book/view');
+ 		
  	}).catch((error) =>{
  		console.log("Error capturing rating", error);
  	});
