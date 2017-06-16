@@ -37,6 +37,13 @@ app.controller("BookViewCtrl", function($location, $rootScope, $routeParams, $sc
     $scope.percent = 100 * (value / $scope.max);
   };
 
-
+ $scope.rateMe = (rate, book) =>{
+ 	$scope.rate = rate;
+ 	RatingFactory.rateBook($scope.rate, book.isbn, book.borrowerUid).then(() =>{
+ 		$location.url('/book/view');
+ 	}).catch((error) =>{
+ 		console.log("Error capturing rating", error);
+ 	});
+ };
 
 });
