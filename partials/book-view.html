@@ -7,13 +7,5 @@
 
 <h6 class="text-center" ng-repeat="item in ratings">Ratings: {{item.rating}}</h6>
 <!-- <button class="center-block" ng-click="rateBook()">Rate me!</button> --> <!-- NEED TO ADD RATEBOOK FUNC -->
-	<!-- <div class="center-block"> -->
-    <h4 class="text-center">Rate Me</h4><span class="center-block" uib-rating ng-model="rate" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating"></span>
-  <!--   <span class="label center-block" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span> -->
 
-
- <!--    <button type="button" class="btn btn-sm btn-danger" ng-click="rate = 0" ng-disabled="isReadonly">Clear</button>
-    <button type="button" class="btn btn-sm btn-default" ng-click="isReadonly = ! isReadonly">Toggle Readonly</button>
-    <hr /> -->
-
- <!-- </div> -->
+    <h4 class="text-center">Rate Me</h4><span class="center-block" uib-rating ng-model="rate" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating" ng-click="rateMe(rate, selectedBook)"></span>

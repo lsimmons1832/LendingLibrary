@@ -18,7 +18,7 @@ app.controller("BookViewCtrl", function($location, $rootScope, $routeParams, $sc
 
 	$scope.checkoutBook = () =>{
 			$scope.selectedBook.isCheckedOut = true;
-			$scope.selectedBook.borrowerUid = $rootScope.user.uid;
+			$scope.selectedBook.borroweruid = $rootScope.user.uid;
 		BookFactory.borrowBook($scope.selectedBook).then(()=>{
 			$location.url('/books/list/user'); //think about adding books/list/user
 		}).catch((error) => {
@@ -38,8 +38,10 @@ app.controller("BookViewCtrl", function($location, $rootScope, $routeParams, $sc
   };
 
  $scope.rateMe = (rate, book) =>{
+ 	console.log("rate", rate);
+ 	console.log("book", book);
  	$scope.rate = rate;
- 	RatingFactory.rateBook($scope.rate, book.isbn, book.borrowerUid).then(() =>{
+ 	RatingFactory.rateBook($scope.rate, book.isbn, book.borroweruid).then(() =>{
  		$location.url('/book/view');
  	}).catch((error) =>{
  		console.log("Error capturing rating", error);

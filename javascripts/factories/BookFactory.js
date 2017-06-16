@@ -106,17 +106,18 @@ app.factory("BookFactory", function($http, $q, FIREBASE_CONFIG, GOOGLE_BOOKS){
 	};
 	
 	let postNewBook = (newBook) =>{
+		console.log(newBook);
 		return $q ((resolve, reject) =>{
 			$http.post(`${FIREBASE_CONFIG.databaseURL}/books.json`, 
 			JSON.stringify({
 					isCheckedOut: newBook.isCheckedOut,
 					title: newBook.title,
 					imageLink: newBook.imageLinks.thumbnail,
-					author: newBook.author,
+					author: newBook.authors,
 					description: newBook.description,
 					isbn: newBook.industryIdentifiers[0].identifier,
 					uid: newBook.uid,
-					borroweruid: newBook.borrowerUid	
+					borroweruid: newBook.borroweruid	
 				})
 			).then((resultz) =>{
 				resolve(resultz);
@@ -148,7 +149,7 @@ app.factory("BookFactory", function($http, $q, FIREBASE_CONFIG, GOOGLE_BOOKS){
 				description: book.description,
 				isbn: book.isbn,
 				uid: book.uid,
-				borroweruid: book.borrowerUid	
+				borroweruid: book.borroweruid	
 			})
 			).then(() => {
 				resolve();
