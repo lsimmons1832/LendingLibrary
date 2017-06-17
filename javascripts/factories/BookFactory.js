@@ -106,7 +106,6 @@ app.factory("BookFactory", function($http, $q, FIREBASE_CONFIG, GOOGLE_BOOKS){
 	};
 	
 	let postNewBook = (newBook) =>{
-		console.log(newBook);
 		return $q ((resolve, reject) =>{
 			$http.post(`${FIREBASE_CONFIG.databaseURL}/books.json`, 
 			JSON.stringify({

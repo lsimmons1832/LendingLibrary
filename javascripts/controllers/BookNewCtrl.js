@@ -68,7 +68,7 @@ $scope.hideHeader = ($location.path() === '/books/new') ? true : false;
 
 	for (var i = 0; i < 4; i++) {
 		$scope.addSlide();
-	};
+	}
 
 	let assignNewIndexesToSlides = (indexes) => {
 		for (var i = 0, l = slides.length; i < l; i++) {
