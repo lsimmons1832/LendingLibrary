@@ -19,7 +19,6 @@ app.controller("AuthCtrl", function($location, $rootScope, $scope, AuthFactory, 
 			$scope.alerts.push({msg: error.message});
 			console.log("authenticate error", error);
 		}).then((user) =>{
-			console.log("user", user);
 			$rootScope.user = user;
 			$location.url('/books/list');
 		}).catch((error) => {

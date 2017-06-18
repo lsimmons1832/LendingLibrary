@@ -10,7 +10,6 @@ app.controller("BookNewCtrl", function($location, $rootScope, $scope, BookFactor
 
 		$scope.getNewBooks = () =>{
 		BookFactory.getGoogleBooksByTitle($scope.dropDown, $scope.searchText, key).then((bookz)=>{
-			//console.log("books returned", bookz.data.items);
 			$scope.books = bookz.data.items;
 		}).catch((error)=>{
 			console.log('', error);
@@ -46,7 +45,7 @@ $scope.hideHeader = ($location.path() === '/books/new') ? true : false;
 		});
 	};
 
-	$scope.myInterval = 5000;
+	$scope.myInterval = 3000;
 	$scope.noWrapSlides = false;
 	$scope.active = 0;
 	let slides = $scope.slides = [];
