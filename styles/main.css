@@ -7,3 +7,14 @@ body {
     font-size: 20px; }
   body h1 {
     color: #1F2041; }
+  body .img {
+    width: 128px;
+    height: 195px; }
+  body a.title {
+    width: 9.375em;
+    text-overflow: ellipsis;
+    color: #119DA4; }
+  body p {
+    width: 200px !important;
+    word-wrap: break-word !important;
+    white-space: pre-wrap !important; }

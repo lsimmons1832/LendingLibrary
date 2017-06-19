@@ -11,4 +11,18 @@ body{
 	h1{
 		color: $darkpurple;
 	}
+	.img {
+		width:  128px;
+		height: 195px;
+	}
+	a.title{
+		width: 9.375em;
+		text-overflow: ellipsis;
+		color: $lightteal;
+	}
+    p{
+		width: 200px !important;
+		word-wrap: break-word !important;
+		white-space: pre-wrap !important;
+	}
 }
