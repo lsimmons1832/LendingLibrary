@@ -60,18 +60,18 @@ $scope.hideHeader = ($location.path() === '/books/new') ? true : false;
       id: currIndex++
     },
     {
-    	image: 'http://books.google.com/books/content?id=RAUQ2_xcFzgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api' + newWidth + '/300',
-      text: ["Best Seller","A Remarkable Creation","I couldn't stop reading","The author is brilliant"][slides.length % 4],
+	  image: 'http://books.google.com/books/content?id=RAUQ2_xcFzgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api' + newWidth + '/300',
+      text: ["A Remarkable Creation","I couldn't stop reading","The author is brilliant"][slides.length % 4],
       id: currIndex++
     },
     {
-    	image: 'http://books.google.com/books/content?id=8CngAQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api' + newWidth + '/300',
-      text: ["Best Seller","A Remarkable Creation","I couldn't stop reading","The author is brilliant"][slides.length % 4],
+      image: 'http://books.google.com/books/content?id=8CngAQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api' + newWidth + '/300',
+      text: ["I couldn't stop reading","Best Seller","A Remarkable Creation","The author is brilliant"][slides.length % 4],
       id: currIndex++
     },
     {
-    	image: 'http://books.google.com/books/content?id=ZSu2DQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api' + newWidth + '/300',
-      text: ["Best Seller","A Remarkable Creation","I couldn't stop reading","The author is brilliant"][slides.length % 4],
+      image: 'http://books.google.com/books/content?id=ZSu2DQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api' + newWidth + '/300',
+      text: ["The author is brilliant","Best Seller","A Remarkable Creation","I couldn't stop reading"][slides.length % 4],
       id: currIndex++
     });
 	};

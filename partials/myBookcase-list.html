@@ -14,19 +14,19 @@
   <uib-tabset active="activeJustified" justified="true">
     <uib-tab index="0" heading="My Collection" active="activeForm">
 	  <div class="col-xs-6 col-md-4" ng-repeat="item in myBooks">
-		<h3>
+		<h3 class="text-center">
 			<a class="title" ng-href="#!/book/view/{{item.bookId}}">{{item.title}}</a>
 		</h3>
-			<img class="img" ng-src="{{item.imageLink}}" alt="">
+			<img class="img center-block" ng-src="{{item.imageLink}}" alt=""><br>
 			<button class="btn center-block" ng-click="deleteBook(item.bookId)">Remove From Collection</button>  
       </div>
   </uib-tab>
   <uib-tab index="1" heading="Borrowed Books" active="activeForm">
       <div class="col-xs-6 col-md-4" ng-repeat="book in borrowedBooks">
-		<h3>
+		<h3 class="text-center">
 			<a class="title" ng-href="#!/book/view/{{book.id}}">{{book.title}}</a>
 		</h3>
-		<img class="img" ng-src="{{book.imageLink}}" alt="">
+		<img class="img center-block" ng-src="{{book.imageLink}}" alt=""><br>
 		<button class="btn center-block" ng-click="returnBook(book)">Return Book</button>  
 	  </div>
   </uib-tab>
