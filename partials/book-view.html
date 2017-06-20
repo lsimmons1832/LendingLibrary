@@ -1,11 +1,15 @@
+<div class='view'>
 <h3 class="text-center">{{selectedBook.title}}</h3>
 <img class="img center-block" ng-src="{{selectedBook.imageLink}}" alt="">
 <h4 class="text-center">Authors: {{selectedBook.author}}</h4>
 <h5 class="text-center">Description: {{selectedBook.description}}</h5>
-<p class="text-center">ISBN: {{selectedBook.isbn}}</p>
-<button class="btn center-block" ng-click="checkoutBook()">Checkout</button>
+<p class="center-block">ISBN: {{selectedBook.isbn}}</p>
+<button class="btn center-block" ng-if="!selectedBook.isCheckedOut" ng-click="checkoutBook()">Checkout</button>
+<button class=" btn center-block" ng-if="selectedBook.isCheckedOut" ng-click="addToWaitList(item)">Add To Waiting List</button>
 
 <h6 class="text-center">Ratings: {{averageRatings}}</h6>
 <!-- <button class="center-block" ng-click="rateBook()">Rate me!</button> --> <!-- NEED TO ADD RATEBOOK FUNC -->
 
-    <h4 class="text-center">Rate Me</h4><span class="center-block" uib-rating ng-model="rate" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating" ng-click="rateMe(rate, selectedBook)"></span>
+<h4 class="text-center">Rate Me</h4>
+<span class="center-block" uib-rating ng-model="rate" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating" ng-click="rateMe(rate, selectedBook)"></span>
+</div>

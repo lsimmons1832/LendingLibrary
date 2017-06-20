@@ -20,3 +20,6 @@ body {
     white-space: pre-wrap !important; }
   body .greeting {
     color: #1F2041; }
+  body .view {
+    width: 50%;
+    margin: 0 auto; }

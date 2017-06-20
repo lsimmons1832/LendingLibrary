@@ -13,7 +13,8 @@
 			<a class="title" ng-href="#!/book/view/{{item.id}}">{{item.title}}</a>
 		</h3>
 			<img class="img center-block" ng-src="{{item.imageLink}}" alt=""><br>
-			<button class=" btn center-block" ng-click="checkoutBook(item)">Checkout</button>  <!-- This function doesn't work ***MUST FIX-->
+			<button class=" btn center-block" ng-if="!item.isCheckedOut" ng-click="checkoutBook(item)">Checkout</button>
+      <button class=" btn center-block" ng-if="item.isCheckedOut" ng-click="addToWaitList(item)">Add To Waiting List</button>  <!-- This function doesn't work ***MUST FIX-->
      <!--  </div> -->
     </div>
   </div>

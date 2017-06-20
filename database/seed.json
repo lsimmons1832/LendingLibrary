@@ -404,5 +404,22 @@
       "uid" : "J0N4iAfhvqf80Zh5B8Hdtyqqce72",
       "username" : "Snickers"
     }
+  },
+  "waitinglists":{
+    "waitlist0":{
+      "isbn": "9780964729292",
+      "uid": "gL7ITJ74LLYkbcnfIdsSeVQoJ253",
+      "date": "2017-06-01"
+    },
+    "waitList1": {
+      "isbn": "9780964729292",
+      "uid": "dUQ3ZB8FnEa9M7cdLaUNMTi2kff2",
+      "date": "2017-05-19"
+    },
+    "waitlist2":{
+      "isbn": "9780964729292",
+      "uid": "eR4LTE2ikiekr5PjbbUHEz8LJwf1",
+      "date": "2017-06-17"
+    }
   }
 }

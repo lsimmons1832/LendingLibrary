@@ -1,6 +1,6 @@
 app.controller("BookViewCtrl", function($location, $rootScope, $routeParams, $scope, BookFactory, RatingFactory) {
 
-    $scope.selectedBook = {};
+    $scope.selectedBook = [];
     $scope.averageRatings = 0;
     $scope.rated = 0;
     $scope.ratings = [];
@@ -23,7 +23,7 @@ app.controller("BookViewCtrl", function($location, $rootScope, $routeParams, $sc
 
     getBook();
 
-    let getAllRatings = () =>{
+    let getAllRatings = () => {
         RatingFactory.getRatings($scope.selectedBook.isbn).then((ratingz) => {
             console.log("ratings returned", ratingz);
             $scope.averageRatings = ratingz;
@@ -60,20 +60,24 @@ app.controller("BookViewCtrl", function($location, $rootScope, $routeParams, $sc
         $scope.rate = rate;
         if ($scope.ratings.uid !== $rootScope.user.uid) {
             RatingFactory.rateBook($scope.rate, book.isbn, $rootScope.user.uid)
-            .then(() => {
-                getBook();
-            }).catch((error) => {
-                console.log("Error capturing rating", error);
-            });
-        } else if($scope.rated > 0 && $scope.ratings.uid === $rootScope.user.uid){
+                .then(() => {
+                    getBook();
+                }).catch((error) => {
+                    console.log("Error capturing rating", error);
+                });
+        } else if ($scope.rated > 0 && $scope.ratings.uid === $rootScope.user.uid) {
             RatingFactory.updateRating($scope.rate, book.isbn, $rootScope.user.uid)
-            .then(() => {
-                getBook();
-                $scope.rated = true;
-            }).catch((error) => {
-                console.log("Error capturing rating", error);
-            });
+                .then(() => {
+                    getBook();
+                    $scope.rated = true;
+                }).catch((error) => {
+                    console.log("Error capturing rating", error);
+                });
         }
+    };
+
+    let isCheckedOut = () => {
+        return $scope.selectedBook.isCheckedOut ? true : false;
     };
 
 });
