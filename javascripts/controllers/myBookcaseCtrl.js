@@ -34,6 +34,21 @@
 		});
 	};
 	
+	//I need a function that will check to see if there is a waitinglist for a book before attempting to 
+	//return the book.  If there is a waiting list. I need to update the borroweruid on the book to
+	//reflect the uid of the user with the oldest request date
+	
+	//checking to see if waitinglist exist
+	let getWaitingList  = (isbn) =>{
+		$scope.book.isbn = isbn;
+		WaitListFactory.getList($scope.book.isbn).then((data) =>{
+		resolve(data);
+		}).catch((error) =>{
+		console.log("Error getting waiting list", error);
+		});
+	};
+
+
 	$scope.returnBook = (book) =>{
 		$scope.book = book;
 		$scope.book.isCheckedOut = false;
