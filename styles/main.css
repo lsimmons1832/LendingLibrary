@@ -18,3 +18,5 @@ body {
     width: 200px !important;
     word-wrap: break-word !important;
     white-space: pre-wrap !important; }
+  body .greeting {
+    color: #1F2041; }
