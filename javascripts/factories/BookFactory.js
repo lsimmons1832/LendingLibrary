@@ -138,6 +138,7 @@ app.factory("BookFactory", function($http, $q, FIREBASE_CONFIG, GOOGLE_BOOKS){
 	};
 
 	let bookReturn = (book) => {
+	console.log("passing this info into the factory", book);
 		return $q((resolve, reject) => {
 			$http.put(`${FIREBASE_CONFIG.databaseURL}/books/${book.id}.json`,
 			JSON.stringify({
@@ -150,8 +151,9 @@ app.factory("BookFactory", function($http, $q, FIREBASE_CONFIG, GOOGLE_BOOKS){
 				uid: book.uid,
 				borroweruid: book.borroweruid	
 			})
-			).then(() => {
-				resolve();
+			).then((resultz) => {
+				console.log("what happens on return", resultz);
+				resolve(resultz);
 			}).catch((error) => {
 				reject(error);
 			});
