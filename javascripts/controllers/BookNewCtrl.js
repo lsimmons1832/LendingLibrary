@@ -46,7 +46,7 @@ $scope.hideHeader = ($location.path() === '/books/new') ? true : false;
 		});
 	};
 
-	$scope.myInterval = 5000;
+	$scope.myInterval = 4000;
 	$scope.noWrapSlides = false;
 	$scope.active = 0;
 	let slides = $scope.slides = [];

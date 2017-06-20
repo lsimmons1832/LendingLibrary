@@ -25,4 +25,11 @@ body{
 		word-wrap: break-word !important;
 		white-space: pre-wrap !important;
 	}
+	.greeting{
+		color: $darkpurple;
+	}
+	.view{
+		width: 50%;
+		margin: 0 auto;
+	}
 }
