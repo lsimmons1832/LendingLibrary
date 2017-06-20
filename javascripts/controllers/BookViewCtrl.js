@@ -1,4 +1,4 @@
-app.controller("BookViewCtrl", function($location, $rootScope, $routeParams, $scope, BookFactory, RatingFactory) {
+app.controller("BookViewCtrl", function($location, $rootScope, $routeParams, $scope, BookFactory, RatingFactory, WaitListFactory) {
 
     $scope.selectedBook = [];
     $scope.averageRatings = 0;
@@ -78,6 +78,20 @@ app.controller("BookViewCtrl", function($location, $rootScope, $routeParams, $sc
 
     let isCheckedOut = () => {
         return $scope.selectedBook.isCheckedOut ? true : false;
+    };
+
+    $scope.waitList = [];
+
+    $scope.addToWaitList = (waitList) => {
+	console.log("waitlist",waitList);
+    	$scope.waitList = waitList;
+    	$scope.waitList.uid = $rootScope.user.uid;
+    	$scope.waitList.date = new Date();
+    	WaitListFactory.addMeToTheList($scope.waitList).then(() =>{
+    		$location.url('book/list');
+    	}).catch((error)=>{
+    		console.log("Error adding to waiting list", error);
+    	});
     };
 
 });

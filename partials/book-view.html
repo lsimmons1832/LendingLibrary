@@ -5,7 +5,7 @@
 <h5 class="text-center"><strong>Description:</strong> {{selectedBook.description}}</h5>
 <p class="center-block"><strong>ISBN:</strong> {{selectedBook.isbn}}</p>
 <button class="btn center-block" ng-if="!selectedBook.isCheckedOut" ng-click="checkoutBook()">Checkout</button>
-<button class=" btn center-block" ng-if="selectedBook.isCheckedOut" ng-click="addToWaitList(item)">Add To Waiting List</button>
+<button class=" btn center-block" ng-if="selectedBook.isCheckedOut" ng-click="addToWaitList(selectedBook)">Add To Waiting List</button>
 
 <h6 class="text-center"><strong>Ratings:</strong> {{averageRatings}}</h6>
 <!-- <button class="center-block" ng-click="rateBook()">Rate me!</button> --> <!-- NEED TO ADD RATEBOOK FUNC -->
