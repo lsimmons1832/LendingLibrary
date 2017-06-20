@@ -4,7 +4,7 @@ app.Factory("WaitListFactory", function($http, $q, FIREBASE_CONFIG) {
 		return $q((resolve, reject) =>{
 			$http.post(`${FIREBASE_CONFIG.databaseURL}/waitinglists.json`, 
 				JSON.stringify({
-					//need to stringfy data
+					//need to stringfy
 				})
 				).then(() =>{
 
