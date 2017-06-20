@@ -35,9 +35,10 @@
 	};
 	
 	$scope.returnBook = (book) =>{
+		$scope.book = book;
 		$scope.book.isCheckedOut = false;
 		$scope.book.borroweruid = "";
-		BookFactory.bookReturn(book).then(() => {
+		BookFactory.bookReturn($scope.book).then(() => {
 		  myBorrowedBooks();
 		}).catch(() => {
 			console.log("Error returning the book", error);
