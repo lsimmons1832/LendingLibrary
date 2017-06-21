@@ -85,10 +85,14 @@ app.controller("BookViewCtrl", function($location, $rootScope, $routeParams, $sc
     	waitList.uid = $rootScope.user.uid;
     	waitList.date = new Date();
     	WaitListFactory.addMeToTheList(waitList).then(() =>{
-    		$location.url('/books/list');
     	}).catch((error)=>{
     		console.log("Error adding to waiting list", error);
     	});
+		$scope.dynamicPopover = {
+			content: "You've been added to the waiting list",
+			templateUrl: 'myPopoverTemplate.html'
+		};
+		$location.url('/books/list');
     };
 
 });
