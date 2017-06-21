@@ -35,7 +35,7 @@ app.controller("BookListCtrl", function($rootScope, $location, $scope, BookFacto
     	$scope.waitList.uid = $rootScope.user.uid;
     	$scope.waitList.date = new Date();
     	WaitListFactory.addMeToTheList($scope.waitList).then(() =>{
-    		$location.url('book/list');
+    		$location.url('/books/list');
     	}).catch((error)=>{
     		console.log("Error adding to waiting list", error);
     	});
