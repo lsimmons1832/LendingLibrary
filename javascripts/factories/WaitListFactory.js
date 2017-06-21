@@ -21,9 +21,9 @@ app.factory("WaitListFactory", function($http, $q, FIREBASE_CONFIG) {
 		return $q((resolve, reject) =>{
 			$http.get(`${FIREBASE_CONFIG.databaseURL}/waitinglists.json?orderBy="isbn"&equalTo="${isbn}"`)
 			.then((waitList) =>{
-			let lisitng = waitList.data;
-			if(lisiting !== null){
-				Object.keys(lisiting).forEach((key) =>{
+			let listing = waitList.data;
+			if(listing !== null){
+				Object.keys(listing).forEach((key) =>{
 				listing[key].id = key;
 				nextUp.push(listing[key]);
 				});
