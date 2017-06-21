@@ -10,12 +10,12 @@
   }
 </style>
 
-<!-- <div ng-controller="myBookcaseCtrl"> -->
   <uib-tabset active="activeJustified" justified="true">
     <uib-tab index="0" heading="My Collection" active="activeForm">
 	  <div class="col-xs-6 col-md-4" ng-repeat="item in myBooks">
 		<h3 class="text-center">
-			<a class="title" ng-href="#!/book/view/{{item.bookId}}">{{item.title}}</a>
+			<a class="title" ng-href="#!/book/view/{{item.bookId}}" ng-bind="item.title |limitTo:25"></a>
+			<a class="title" ng-if="item.title.length > 25">...</a>
 		</h3>
 			<img class="img center-block" ng-src="{{item.imageLink}}" alt=""><br>
 			<button class="btn center-block" ng-click="deleteBook(item.bookId)">Remove From Collection</button>  
@@ -24,12 +24,11 @@
   <uib-tab index="1" heading="Borrowed Books" active="activeForm">
       <div class="col-xs-6 col-md-4" ng-repeat="book in borrowedBooks">
 		<h3 class="text-center">
-			<a class="title" ng-href="#!/book/view/{{book.id}}">{{book.title}}</a>
+			<a class="title" ng-href="#!/book/view/{{book.id}}" ng-bind="book.title |limitTo:25"></a>
+			<a class="title" ng-if="book.title.length > 25">...</a>
 		</h3>
 		<img class="img center-block" ng-src="{{book.imageLink}}" alt=""><br>
 		<button class="btn center-block" ng-click="returnBook(book)">Return Book</button>  
 	  </div>
   </uib-tab>
 </uib-tabset>
-<!-- </div> -->
-  <hr /> 
