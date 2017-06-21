@@ -58,14 +58,14 @@ app.controller("BookViewCtrl", function($location, $rootScope, $routeParams, $sc
         console.log("rate", rate);
         console.log("book", book);
         $scope.rate = rate;
-        if ($scope.ratings.uid !== $rootScope.user.uid) {
+        if ($scope.rate.uid !== $rootScope.user.uid) {
             RatingFactory.rateBook($scope.rate, book.isbn, $rootScope.user.uid)
                 .then(() => {
                     getBook();
                 }).catch((error) => {
                     console.log("Error capturing rating", error);
                 });
-        } else if ($scope.rated > 0 && $scope.ratings.uid === $rootScope.user.uid) {
+        } else if ($scope.rated > 0 && $scope.rate.uid === $rootScope.user.uid) {
             RatingFactory.updateRating($scope.rate, book.isbn, $rootScope.user.uid)
                 .then(() => {
                     getBook();
@@ -80,15 +80,12 @@ app.controller("BookViewCtrl", function($location, $rootScope, $routeParams, $sc
         return $scope.selectedBook.isCheckedOut ? true : false;
     };
 
-    $scope.waitList = [];
-
+   
     $scope.addToWaitList = (waitList) => {
-	console.log("waitlist",waitList);
-    	$scope.waitList = waitList;
-    	$scope.waitList.uid = $rootScope.user.uid;
-    	$scope.waitList.date = new Date();
-    	WaitListFactory.addMeToTheList($scope.waitList).then(() =>{
-    		$location.url('book/list');
+    	waitList.uid = $rootScope.user.uid;
+    	waitList.date = new Date();
+    	WaitListFactory.addMeToTheList(waitList).then(() =>{
+    		$location.url('/books/list');
     	}).catch((error)=>{
     		console.log("Error adding to waiting list", error);
     	});
