@@ -1,4 +1,4 @@
-app.controller("BookListCtrl", function($rootScope, $location, $scope, BookFactory, WaitListFactory) {
+app.controller("BookListCtrl", function($rootScope, $location, $scope, BookFactory, WaitListFactory, $window, $route, $interval) {
     $scope.books = [];
 
     let getBooks = () => {
@@ -28,17 +28,22 @@ app.controller("BookListCtrl", function($rootScope, $location, $scope, BookFacto
         return $scope.books.isCheckedOut ? true : false;
     };
 
-    $scope.waitList = [];
+	let callInterval = () => {
+    console.log("Interval occurred");
+	};
 
     $scope.addToWaitList = (waitList) => {
-    	$scope.waitList = waitList;
-    	$scope.waitList.uid = $rootScope.user.uid;
-    	$scope.waitList.date = new Date();
-    	WaitListFactory.addMeToTheList($scope.waitList).then(() =>{
-    		$location.url('/books/list');
+       	waitList.uid = $rootScope.user.uid;
+    	waitList.date = new Date();
+    	WaitListFactory.addMeToTheList(waitList).then(() =>{
     	}).catch((error)=>{
     		console.log("Error adding to waiting list", error);
     	});
+		$scope.dynamicPopover = {
+			content: "You've been added to the waiting list",
+			templateUrl: 'myPopoverTemplate.html'
+		};
+		 //$interval(callInterval, 10000); //comment out until you can get the popover fixed
+		//$route.reload('/books/list');
     };
-
 });
