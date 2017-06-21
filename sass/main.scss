@@ -15,9 +15,9 @@ body{
 		width:  128px;
 		height: 195px;
 	}
-	a.title{
+	.title{
 		width: 9.375em;
-		text-overflow: ellipsis;
+		max-height: 27px;
 		color: $lightteal;
 	}
     p{

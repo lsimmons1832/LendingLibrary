@@ -1,23 +1,19 @@
 <div class="row">
   <div class="col-lg-4 col-lg-offset-4">
       <input type="text" class="form-control inner-addon right-addon fa fa-search" placeholder="&#61442; Search for..." ng-model="searchText">
-    </div><!-- /input-group -->
- </div><!-- /.col-lg-6 -->
+    </div>
+ </div>
 
  <div class="clearfix"></div>
 
 <div ng-repeat="item in books | filter:searchText">
-  <!-- <div class="row"> -->
     <div class="col-xs-6 col-md-4">
 		<h3 class="text-center">
-			<a class="title" ng-href="#!/book/view/{{item.id}}">{{item.title}}</a>
+			<a class="title" ng-href="#!/book/view/{{item.id}}" ng-bind="item.title |limitTo:25"></a>
+			<a class="title" ng-if="item.title.length > 25">...</a>
 		</h3>
 			<img class="img center-block" ng-src="{{item.imageLink}}" alt=""><br>
 			<button class=" btn center-block" ng-if="!item.isCheckedOut" ng-click="checkoutBook(item)">Checkout</button>
-      <button class=" btn center-block" ng-if="item.isCheckedOut" ng-click="addToWaitList(item)">Add To Waiting List</button>  <!-- This function doesn't work ***MUST FIX-->
-     <!--  </div> -->
+      <button class=" btn center-block" ng-if="item.isCheckedOut" ng-click="addToWaitList(item)">Add To Waiting List</button>  
     </div>
   </div>
-
-		<!--position: relative;
-		float: center;-->
