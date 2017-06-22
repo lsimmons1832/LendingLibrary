@@ -2,13 +2,18 @@
 
 body{
 	background-color: $yellow;
+	color: #000;
+	font: 14px Arial;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
 	.navbar{
 		height: 100px;
 		padding: 0;
 		background-color: $navback;
 		font-size: 20px;
 	}
-	h1{
+	.branding{
 		color: $darkpurple;
 	}
 	.img {
@@ -41,7 +46,8 @@ body{
 	}
 }
 
-h1,h2,h3,h4,h5,h6{ color:#563D64;}
+
+h4{ color: red;}
 small{ font-size:10px;}
 b, strong{ font-weight:bold;}
 a{ text-decoration: none; }

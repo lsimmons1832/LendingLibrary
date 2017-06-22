@@ -1,11 +1,16 @@
 body {
-  background-color: #FFC857; }
+  background-color: #FFC857;
+  color: #000;
+  font: 14px Arial;
+  margin: 0 auto;
+  padding: 0;
+  position: relative; }
   body .navbar {
     height: 100px;
     padding: 0;
     background-color: #201f2b;
     font-size: 20px; }
-  body h1 {
+  body .branding {
     color: #1F2041; }
   body .img {
     width: 128px;
@@ -30,8 +35,8 @@ body {
     height: 10px;
     border-radius: 10px; }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #563D64; }
+h4 {
+  color: red; }
 
 small {
   font-size: 10px; }
