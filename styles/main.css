@@ -1,7 +1,7 @@
 body {
   background-color: #FFC857;
   color: #000;
-  font: 14px Arial;
+  font-family: 'Cormorant Garamond', serif;
   margin: 0 auto;
   padding: 0;
   position: relative; }
@@ -11,10 +11,14 @@ body {
     background-color: #201f2b;
     font-size: 20px; }
   body .branding {
-    color: #1F2041; }
+    color: #1F2041;
+    font-family: 'Cormorant Garamond', serif; }
   body .img {
     width: 128px;
-    height: 195px; }
+    height: 195px;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Tillana', cursive;
+    font-family: 'Asul', sans-serif; }
   body .title {
     width: 9.375em;
     max-height: 27px;
@@ -100,7 +104,7 @@ form:after {
 
 #content h1 {
   color: #1F2041;
-  font: bold 25px Helvetica, Arial, sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   letter-spacing: -0.05em;
   line-height: 20px;
   margin: 10px 0 30px; }
