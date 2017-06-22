@@ -92,7 +92,7 @@ app.controller("BookViewCtrl", function($location, $rootScope, $routeParams, $sc
 			content: "You've been added to the waiting list",
 			templateUrl: 'myPopoverTemplate.html'
 		};
-		$location.url('/books/list');
+		//$location.url('/books/list');
     };
 
 });

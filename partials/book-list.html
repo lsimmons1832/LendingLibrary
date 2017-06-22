@@ -14,8 +14,9 @@
 		</h3>
 			<img class="img center-block" ng-src="{{item.imageLink}}" alt=""><br>
 			<button class=" btn center-block" ng-if="!item.isCheckedOut" ng-click="checkoutBook(item)">Checkout</button>
-			<button uib-popover="{{dynamicPopover.content}}" popover-title="{{dynamicPopover.title}}" type="button" popover-trigger="focus" class=" btn center-block" ng-if="item.isCheckedOut" ng-click="addToWaitList(item)">Add To Waiting List</button>
-		    <script type="text/ng-template" id="myPopoverTemplate.html">
+			<button popover-animation="true" uib-popover="{{dynamicPopover.content}}" type="button"  popover-is-open="false"  class=" btn center-block" ng-if="item.isCheckedOut" ng-click="addToWaitList(item); popoverIsOpen = !popoverIsOpen">Add To Waiting List</button>
+
+		    <script type="text/ng-template" id="PopoverTemplate.html">
 				<div>{{dynamicPopover.content}}</div>
 			</script>
     </div>

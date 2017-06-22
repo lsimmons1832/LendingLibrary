@@ -39,11 +39,11 @@ app.controller("BookListCtrl", function($rootScope, $location, $scope, BookFacto
     	}).catch((error)=>{
     		console.log("Error adding to waiting list", error);
     	});
-		$scope.dynamicPopover = {
-			content: "You've been added to the waiting list",
-			templateUrl: 'myPopoverTemplate.html'
+        $scope.dynamicPopover = {
+			content: "You've been added to the waiting list!",
+			templateUrl: 'PopoverTemplate.html'
 		};
-		 //$interval(callInterval, 10000); //comment out until you can get the popover fixed
-		//$route.reload('/books/list');
     };
+        //$interval(callInterval, 10000); //comment out until you can get the popover fixed
+        //$route.reload('/books/list');
 });
