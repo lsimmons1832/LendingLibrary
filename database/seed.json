@@ -323,10 +323,10 @@
     "book1" : {
       "author" : "Margaret Atwood",
       "borroweruid" : "iWU9TGP3oXZmYq75YqXVZqUVTxh2",
-      "description" : "sjvnkjwsnvksn iewnf vcajoivhjsw  ivw ovivn o wn von ih l",
-      "imageLink" : "http://books.google.com/books/content?id=tIceOIzTQfgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+      "description" : "In this multi-award-winning, bestselling novel, Margaret Atwood has created a stunning Orwellian vision of the near future. This is the story of Offred, one of the unfortunate “Handmaids” under the new social order who have only one purpose: to breed. In Gilead, where women are prohibited from holding jobs, reading, and forming friendships, Offred’s persistent memories of life in the “time before” and her will to survive are acts of rebellion. Provocative, startling, prophetic, and with Margaret Atwood’s devastating irony, wit, and acute perceptive powers in full force, The Handmaid’s Tale is at once a mordant satire and a dire warning.",
+      "imageLink" : "http://books.google.com/books/content?id=ECvxEpH7VZYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
       "isCheckedOut" : true,
-      "isbn" : "9780770422639",
+      "isbn" : "9781551994963",
       "title" : "A Handmaid's Tale",
       "uid" : "J0N4iAfhvqf80Zh5B8Hdtyqqce72"
     },

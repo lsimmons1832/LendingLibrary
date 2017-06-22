@@ -10,9 +10,9 @@ body {
   body .img {
     width: 128px;
     height: 195px; }
-  body a.title {
+  body .title {
     width: 9.375em;
-    text-overflow: ellipsis;
+    max-height: 27px;
     color: #119DA4; }
   body p {
     width: 200px !important;
@@ -23,3 +23,9 @@ body {
   body .view {
     width: 50%;
     margin: 0 auto; }
+  body .shelf {
+    display: block;
+    width: 100%;
+    background-color: brown;
+    height: 10px;
+    border-radius: 10px; }

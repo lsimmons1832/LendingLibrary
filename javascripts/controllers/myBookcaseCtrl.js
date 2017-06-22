@@ -43,7 +43,7 @@
 					b = new Date(b.date);
 					// return a > b? -1:a < b?1:0
 					return a-b;
-				})
+				});
 				book.borroweruid = data[0].uid;
 			}else{
 				book.isCheckedOut = false;
