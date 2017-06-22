@@ -88,11 +88,11 @@ app.controller("BookViewCtrl", function($location, $rootScope, $routeParams, $sc
     	}).catch((error)=>{
     		console.log("Error adding to waiting list", error);
     	});
+        //$location.url('/books/list');
+    };
 		$scope.dynamicPopover = {
 			content: "You've been added to the waiting list",
 			templateUrl: 'myPopoverTemplate.html'
 		};
-		//$location.url('/books/list');
-    };
 
 });

@@ -76,29 +76,8 @@ $scope.hideHeader = ($location.path() === '/books/new') ? true : false;
     });
 	};
 
-	$scope.randomize = function() {
-		let indexes = generateIndexesArray();
-		assignNewIndexesToSlides(indexes);
-	};
-
 	for (var i = 0; i < 4; i++) {
 		$scope.addSlide();
 	}
-
-	let assignNewIndexesToSlides = (indexes) => {
-		for (var i = 0, l = slides.length; i < l; i++) {
-		slides[i].id = indexes.pop();
-		}
-	};
-
-	let generateIndexesArray = () => {
-		var indexes = [];
-		for (var i = 0; i < currIndex; ++i) {
-		indexes[i] = i;
-		}
-		return shuffle(indexes);
-	};
-
-
 
 });
