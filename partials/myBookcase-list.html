@@ -17,7 +17,11 @@
 			<a class="title" ng-href="#!/book/view/{{item.bookId}}" ng-bind="item.title |limitTo:25"></a>
 			<a class="title" ng-if="item.title.length > 25">...</a>
 		</h3>
-			<img class="img center-block" ng-src="{{item.imageLink}}" alt=""><br>
+		<ul class='list-inline'>
+			<li class='book'>
+				<img class="img center-block" ng-src="{{item.imageLink}}" alt=""><br>
+			</li>
+		</ul>
 			<button class="btn center-block" ng-click="deleteBook(item.bookId)">Remove From Collection</button>  
       </div>
   </uib-tab>
@@ -27,7 +31,11 @@
 			<a class="title" ng-href="#!/book/view/{{book.id}}" ng-bind="book.title |limitTo:25"></a>
 			<a class="title" ng-if="book.title.length > 25">...</a>
 		</h3>
-		<img class="img center-block" ng-src="{{book.imageLink}}" alt=""><br>
+		<ul class='list-inline'>
+			<li class='book'>
+				<img class="img center-block" ng-src="{{book.imageLink}}" alt=""><br>
+			</li>
+		</ul>
 		<button class="btn center-block" ng-click="returnBook(book)">Return Book</button>  
 	  </div>
   </uib-tab>

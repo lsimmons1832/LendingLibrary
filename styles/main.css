@@ -32,15 +32,14 @@ body {
   body .view {
     width: 50%;
     margin: 0 auto; }
-  body .shelf {
-    display: block;
-    width: 100%;
-    background-color: brown;
-    height: 10px;
-    border-radius: 10px; }
 
-h4 {
-  color: red; }
+.det {
+  color: #1F2041; }
+
+.slideText {
+  color: #119DA4;
+  font-weight: 600;
+  font-size: 20px; }
 
 small {
   font-size: 10px; }
@@ -309,9 +308,6 @@ html {
   height: 100%;
   display: table;
   text-align: center; }
-
-body {
-  background: #fde3a7; }
 
 .list-inline {
   padding-left: 0;

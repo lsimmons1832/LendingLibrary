@@ -41,17 +41,16 @@ body{
 		width: 50%;
 		margin: 0 auto;
 	}
-	.shelf{
-		display: block;
-		width: 100%;
-		background-color: brown;
-		height: 10px;
-		border-radius: 10px;
-	}
+}
+.det{
+	color: $darkpurple;
 }
 
-
-h4{ color: red;}
+.slideText{ 
+	color: $lightteal;
+	font-weight: 600;
+	font-size: 20px;
+}
 small{ font-size:10px;}
 b, strong{ font-weight:bold;}
 a{ text-decoration: none; }
@@ -298,11 +297,6 @@ html {
   display: table;
   text-align: center;
 }
-
-body {
-  background: #fde3a7;
-}
-
 
 
 .list-inline {

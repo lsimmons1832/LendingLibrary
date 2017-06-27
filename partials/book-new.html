@@ -1,10 +1,14 @@
   <div style="height: 300px">
     <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
       <div uib-slide ng-repeat="slide in slides" index="slide.id">
-        <img class="img" ng-src="{{slide.image}}" style="margin:auto;">
         <div class="carousel-caption">
-          <h4>{{slide.text}}</h4>
+          <h4 class="slideText">{{slide.text}}</h4>
         </div>
+         <ul class='list-inline'>
+          <li class='book'>
+            <img class="img" ng-src="{{slide.image}}" style="margin:auto;">
+          </li>
+        </ul>
       </div>
     </div>
   </div>
