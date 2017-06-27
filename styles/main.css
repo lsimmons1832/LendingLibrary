@@ -32,15 +32,14 @@ body {
   body .view {
     width: 50%;
     margin: 0 auto; }
-  body .shelf {
-    display: block;
-    width: 100%;
-    background-color: brown;
-    height: 10px;
-    border-radius: 10px; }
 
-h4 {
-  color: red; }
+.det {
+  color: #1F2041; }
+
+.slideText {
+  color: #119DA4;
+  font-weight: 600;
+  font-size: 20px; }
 
 small {
   font-size: 10px; }
@@ -194,7 +193,7 @@ form:after {
   background: #eae7e7 url(https://cssdeck.com/uploads/media/items/8/8bcLQqF.png) no-repeat;
   border: 1px solid #c8c8c8;
   color: #777;
-  font: 13px Helvetica, Arial, sans-serif;
+  font: 13px 'Cormorant Garamond', serif;
   margin: 0 0 10px;
   padding: 15px 10px 15px 40px;
   width: 80%; }
@@ -238,7 +237,7 @@ form:after {
   color: #85592e;
   cursor: pointer;
   float: left;
-  font: bold 15px Helvetica, Arial, sans-serif;
+  font: bold 15px 'Cormorant Garamond', serif;
   height: 35px;
   margin: 20px 0 35px 15px;
   position: relative;
@@ -309,9 +308,6 @@ html {
   height: 100%;
   display: table;
   text-align: center; }
-
-body {
-  background: #fde3a7; }
 
 .list-inline {
   padding-left: 0;
