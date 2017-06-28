@@ -1,5 +1,5 @@
 body {
-  background-color: #FFC857;
+  background-color: #E09F3E;
   color: #000;
   font-family: 'Cormorant Garamond', serif;
   margin: 0 auto;
@@ -11,7 +11,7 @@ body {
     background-color: #201f2b;
     font-size: 20px; }
   body .branding {
-    color: #1F2041;
+    color: #540B0E;
     font-family: 'Cormorant Garamond', serif; }
   body .img {
     width: 128px;
@@ -20,22 +20,22 @@ body {
   body .title {
     width: 9.375em;
     max-height: 27px;
-    color: #119DA4; }
+    color: #9E2A2B; }
   body p {
     width: 200px !important;
     word-wrap: break-word !important;
     white-space: pre-wrap !important; }
   body .greeting {
-    color: #1F2041; }
+    color: #540B0E; }
   body .view {
     width: 50%;
     margin: 0 auto; }
 
 .det {
-  color: #1F2041; }
+  color: #540B0E; }
 
 .slideText {
-  color: #119DA4;
+  color: #9E2A2B;
   font-weight: 600;
   font-size: 20px; }
 
@@ -100,7 +100,7 @@ form:after {
   width: 400px; }
 
 #content h1 {
-  color: #1F2041;
+  color: #540B0E;
   font-family: 'Cormorant Garamond', serif;
   letter-spacing: -0.05em;
   line-height: 20px;
@@ -320,7 +320,7 @@ html {
   width: 150px;
   height: 220px;
   position: relative;
-  background: #ffe9bd;
+  background: #eecb96;
   z-index: 1;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 9px 20px 0 rgba(0, 0, 0, 0.25);
   overflow: hidden;
@@ -348,7 +348,7 @@ html {
   position: absolute;
   z-index: -1;
   top: 0;
-  background: #ffe9bd;
+  background: #eecb96;
   border: 1px solid #d9d9d9; }
 
 .book::before {
@@ -358,7 +358,7 @@ html {
   left: -6px; }
 
 .link {
-  color: #FFC857; }
+  color: #E09F3E; }
 
 .link:hover {
   color: gray; }
