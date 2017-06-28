@@ -2,12 +2,16 @@
 
 
 body{
-	background-color: #E09F3E;
+	background-color: #540b0E;
 	color: #000;
 	font-family: 'Cormorant Garamond', serif;
 	margin: 0 auto;
 	padding: 0;
 	position: relative;
+	
+	.New{
+		color: #fff3b0;
+	}
 	.navbar{
 		height: 100px;
 		padding: 0;
@@ -15,7 +19,7 @@ body{
 		font-size: 20px;
 	}
 	.branding{
-		color: #540B0E;
+		color: #E09F3E;
 		font-family: 'Cormorant Garamond', serif;
 	}
 	.img {
@@ -26,7 +30,7 @@ body{
 	.title{
 		width: 9.375em;
 		max-height: 27px;
-		color: #9E2A2B;
+		color: #E09F3E;
 	}
     p{
 		width: 200px !important;
@@ -34,7 +38,7 @@ body{
 		white-space: pre-wrap !important;
 	}
 	.greeting{
-		color: #540B0E;
+		color: #E09F3E;
 	}
 	.view{
 		width: 50%;
@@ -42,11 +46,11 @@ body{
 	}
 }
 .det{
-	color: #540B0E;
+	color: #E09F3E;
 }
 
 .slideText{ 
-	color: #9E2A2B;
+	color: #FFF3B0;
 	font-weight: 600;
 	font-size: 20px;
 }
@@ -362,7 +366,7 @@ html {
 .book::before { left: -3px; }
 .book::after { left: -6px; }
 .link {
-	color: #E09F3E;
+	color: #540B0E;
 }
 
 .link:hover{
