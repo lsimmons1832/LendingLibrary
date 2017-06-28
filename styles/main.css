@@ -16,9 +16,7 @@ body {
   body .img {
     width: 128px;
     height: 195px;
-    font-family: 'Cormorant Garamond', serif;
-    font-family: 'Tillana', cursive;
-    font-family: 'Asul', sans-serif; }
+    font-family: 'Cormorant Garamond', serif; }
   body .title {
     width: 9.375em;
     max-height: 27px;
@@ -190,7 +188,6 @@ form:after {
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  background: #eae7e7 url(https://cssdeck.com/uploads/media/items/8/8bcLQqF.png) no-repeat;
   border: 1px solid #c8c8c8;
   color: #777;
   font: 13px 'Cormorant Garamond', serif;
@@ -282,7 +279,6 @@ form:after {
   padding: 15px 0; }
 
 .button a {
-  background: url(https://cssdeck.com/uploads/media/items/8/8bcLQqF.png) 0 -112px no-repeat;
   color: #7E7E7E;
   font-size: 17px;
   padding: 2px 0 2px 40px;
@@ -360,3 +356,9 @@ html {
 
 .book::after {
   left: -6px; }
+
+.link {
+  color: #FFC857; }
+
+.link:hover {
+  color: gray; }
