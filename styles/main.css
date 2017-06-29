@@ -1,19 +1,19 @@
 body {
-  background-color: #540b0E;
+  background-color: #FFC857;
   color: #000;
   font-family: 'Cormorant Garamond', serif;
   margin: 0 auto;
   padding: 0;
   position: relative; }
   body .New {
-    color: #fff3b0; }
+    color: #19647E; }
   body .navbar {
     height: 100px;
     padding: 0;
     background-color: #201f2b;
     font-size: 20px; }
   body .branding {
-    color: #E09F3E;
+    color: #1F2041;
     font-family: 'Cormorant Garamond', serif; }
   body .img {
     width: 128px;
@@ -22,19 +22,19 @@ body {
   body .title {
     width: 9.375em;
     max-height: 27px;
-    color: #E09F3E; }
+    color: #19647E; }
   body p {
     width: 200px !important;
     word-wrap: break-word !important;
     white-space: pre-wrap !important; }
   body .greeting {
-    color: #E09F3E; }
+    color: #1F2041; }
   body .view {
     width: 50%;
     margin: 0 auto; }
 
 .det {
-  color: #E09F3E; }
+  color: #4B3F72; }
 
 .slideText {
   color: #FFF3B0;
@@ -102,7 +102,7 @@ form:after {
   width: 400px; }
 
 #content h1 {
-  color: #540B0E;
+  color: #1F2041;
   font-family: 'Cormorant Garamond', serif;
   letter-spacing: -0.05em;
   line-height: 20px;
@@ -322,7 +322,7 @@ html {
   width: 150px;
   height: 220px;
   position: relative;
-  background: #eecb96;
+  background: #ffe9bd;
   z-index: 1;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 9px 20px 0 rgba(0, 0, 0, 0.25);
   overflow: hidden;
@@ -350,7 +350,7 @@ html {
   position: absolute;
   z-index: -1;
   top: 0;
-  background: #eecb96;
+  background: #ffe9bd;
   border: 1px solid #d9d9d9; }
 
 .book::before {
@@ -359,8 +359,17 @@ html {
 .book::after {
   left: -6px; }
 
-.link {
-  color: #540B0E; }
+li > a:link {
+  color: #119DA4; }
 
-.link:hover {
-  color: gray; }
+li > a:visited {
+  color: #19647E; }
+
+a:hover {
+  color: #4B3F72; }
+
+ul.nav li a, ul.nav li a:visited {
+  color: #FFC857 !important; }
+
+ul.nav li a:hover, ul.nav li a:active {
+  color: #E09f3E !important; }

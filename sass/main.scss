@@ -2,7 +2,7 @@
 
 
 body{
-	background-color: #540b0E;
+	background-color: $yellow;
 	color: #000;
 	font-family: 'Cormorant Garamond', serif;
 	margin: 0 auto;
@@ -10,7 +10,7 @@ body{
 	position: relative;
 	
 	.New{
-		color: #fff3b0;
+		color: $teal;
 	}
 	.navbar{
 		height: 100px;
@@ -18,8 +18,9 @@ body{
 		background-color: $navback;
 		font-size: 20px;
 	}
+
 	.branding{
-		color: #E09F3E;
+		color: $darkpurple;
 		font-family: 'Cormorant Garamond', serif;
 	}
 	.img {
@@ -30,7 +31,7 @@ body{
 	.title{
 		width: 9.375em;
 		max-height: 27px;
-		color: #E09F3E;
+		color: $teal;
 	}
     p{
 		width: 200px !important;
@@ -38,7 +39,7 @@ body{
 		white-space: pre-wrap !important;
 	}
 	.greeting{
-		color: #E09F3E;
+		color: $darkpurple;
 	}
 	.view{
 		width: 50%;
@@ -46,7 +47,7 @@ body{
 	}
 }
 .det{
-	color: #E09F3E;
+	color: $lightpurple;
 }
 
 .slideText{ 
@@ -93,7 +94,7 @@ form:after {
 	width: 400px;
 }
 #content h1 {
-	color: #540B0E;
+	color: $darkpurple;
 	font-family: 'Cormorant Garamond', serif;
 	letter-spacing: -0.05em;
 	line-height: 20px;
@@ -280,7 +281,7 @@ form:after {
 	color: #00aeef;
 }
 
-$color-bg: #E09F3E;
+$color-bg: $yellow;
 $book-color-bg: lighten($color-bg, 20%);
 $book-color-border: lighten(#000, 85%);
 $book-border: 1px solid $book-color-border;
@@ -365,10 +366,22 @@ html {
 
 .book::before { left: -3px; }
 .book::after { left: -6px; }
-.link {
-	color: #540B0E;
+
+li > a:link {
+	color: $lightteal;
+}
+li > a:visited{
+	color: $teal;
+}
+a:hover{
+	color:  $lightpurple;
 }
 
-.link:hover{
-	color: gray;
+ul.nav li a, ul.nav li a:visited {
+    color: $yellow !important;
 }
+
+ul.nav li a:hover, ul.nav li a:active {
+    color: #E09f3E !important;
+}
+
