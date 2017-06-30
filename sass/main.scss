@@ -2,9 +2,9 @@
 
 
 body{
-	background-color: $yellow;
+	background-color: #FFF3B0;
 	color: #000;
-	font-family: 'Cormorant Garamond', serif;
+	font-family: 'Fredericka the Great', cursive;
 	margin: 0 auto;
 	padding: 0;
 	position: relative;
@@ -21,17 +21,16 @@ body{
 
 	.branding{
 		color: $darkpurple;
-		font-family: 'Cormorant Garamond', serif;
+		font-family: 'Fredericka the Great', cursive;
 	}
 	.img {
 		width:  128px;
 		height: 195px;
-		font-family: 'Cormorant Garamond', serif;
+		font-family: 'Fredericka the Great', cursive;
 	}
 	.title{
 		width: 9.375em;
 		max-height: 27px;
-		color: $teal;
 	}
     p{
 		width: 200px !important;
@@ -51,7 +50,7 @@ body{
 }
 
 .slideText{ 
-	color: #FFF3B0;
+	color: $yellow;
 	font-weight: 600;
 	font-size: 20px;
 }
@@ -95,7 +94,7 @@ form:after {
 }
 #content h1 {
 	color: $darkpurple;
-	font-family: 'Cormorant Garamond', serif;
+	font-family: 'Fredericka the Great' cursive;
 	letter-spacing: -0.05em;
 	line-height: 20px;
 	margin: 10px 0 30px;
@@ -367,13 +366,13 @@ html {
 .book::before { left: -3px; }
 .book::after { left: -6px; }
 
-li > a:link {
+.title:link {
 	color: $lightteal;
-}
-li > a:visited{
+}		
+.title:visited{
 	color: $teal;
 }
-a:hover{
+.title:hover{
 	color:  $lightpurple;
 }
 
