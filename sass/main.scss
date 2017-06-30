@@ -8,12 +8,17 @@ body{
 	margin: 0 auto;
 	padding: 0;
 	position: relative;
+	
+	.New{
+		color: $teal;
+	}
 	.navbar{
 		height: 100px;
 		padding: 0;
 		background-color: $navback;
 		font-size: 20px;
 	}
+
 	.branding{
 		color: $darkpurple;
 		font-family: 'Cormorant Garamond', serif;
@@ -26,7 +31,7 @@ body{
 	.title{
 		width: 9.375em;
 		max-height: 27px;
-		color: $lightteal;
+		color: $teal;
 	}
     p{
 		width: 200px !important;
@@ -42,11 +47,11 @@ body{
 	}
 }
 .det{
-	color: $darkpurple;
+	color: $lightpurple;
 }
 
 .slideText{ 
-	color: $lightteal;
+	color: #FFF3B0;
 	font-weight: 600;
 	font-size: 20px;
 }
@@ -361,10 +366,22 @@ html {
 
 .book::before { left: -3px; }
 .book::after { left: -6px; }
-.link {
-	color: $yellow;
+
+li > a:link {
+	color: $lightteal;
+}
+li > a:visited{
+	color: $teal;
+}
+a:hover{
+	color:  $lightpurple;
 }
 
-.link:hover{
-	color: gray;
+ul.nav li a, ul.nav li a:visited {
+    color: $yellow !important;
 }
+
+ul.nav li a:hover, ul.nav li a:active {
+    color: #E09f3E !important;
+}
+

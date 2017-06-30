@@ -15,10 +15,14 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#!/books/new" class="link">Add To My BookCase</a></li>
-        <li><a href="#!/books/list/user" class="link">My Bookcase</a></li>
-        <li><a href="#!/auth" class="link">Logout</a></li>
+      <ul class="nav navbar-nav pull-right" ng-if="user.uid">
+        <li><a href="#!/books/new">Add To My BookCase</a></li>
+        <li><a href="#!/books/list/user">My Bookcase</a></li>
+        <li><a href="#!/auth">Logout</a></li>
+      </ul>
+
+	      <ul class="nav navbar-nav navbar-right" ng-if="!user.uid">
+          <li><a ng-href="#!/auth">Login</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

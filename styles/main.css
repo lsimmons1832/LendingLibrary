@@ -5,6 +5,8 @@ body {
   margin: 0 auto;
   padding: 0;
   position: relative; }
+  body .New {
+    color: #19647E; }
   body .navbar {
     height: 100px;
     padding: 0;
@@ -20,7 +22,7 @@ body {
   body .title {
     width: 9.375em;
     max-height: 27px;
-    color: #119DA4; }
+    color: #19647E; }
   body p {
     width: 200px !important;
     word-wrap: break-word !important;
@@ -32,10 +34,10 @@ body {
     margin: 0 auto; }
 
 .det {
-  color: #1F2041; }
+  color: #4B3F72; }
 
 .slideText {
-  color: #119DA4;
+  color: #FFF3B0;
   font-weight: 600;
   font-size: 20px; }
 
@@ -357,8 +359,17 @@ html {
 .book::after {
   left: -6px; }
 
-.link {
-  color: #FFC857; }
+li > a:link {
+  color: #119DA4; }
 
-.link:hover {
-  color: gray; }
+li > a:visited {
+  color: #19647E; }
+
+a:hover {
+  color: #4B3F72; }
+
+ul.nav li a, ul.nav li a:visited {
+  color: #FFC857 !important; }
+
+ul.nav li a:hover, ul.nav li a:active {
+  color: #E09f3E !important; }

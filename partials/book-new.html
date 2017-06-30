@@ -35,12 +35,12 @@
 
 <div ng-repeat="item in books | filter: searchText">
     <div class="col-xs-6 col-sm-4">
-		<h3 class="text-center">{{item.volumeInfo.title}}</h3>
+		<h3 class="text-center New">{{item.volumeInfo.title}}</h3>
 			<img class="img center-block" ng-src="{{item.volumeInfo.imageLinks.thumbnail}}" alt="" >
-			<h4 class="text-center">{{item.volumeInfo.authors[0]}}</h4>
-			<h5 class="text-center" >{{item.volumeInfo.description}}</h5>
+			<h4 class="text-center New">{{item.volumeInfo.authors[0]}}</h4>
+			<h5 class="text-center New" >{{item.volumeInfo.description}}</h5>
 			<h5>{{item.volumeInfo.industryIdentifiers[0].type}}: </h5>
-			<h5 class="text-center">{{item.volumeInfo.industryIdentifiers[0].identifier}}</h5>
+			<h5 class="text-center New">{{item.volumeInfo.industryIdentifiers[0].identifier}}</h5>
 			<button class="btn center-block" ng-click="addNewBook(item.volumeInfo)">Add To My Collection</button>  <!-- This function doesn't work ***MUST FIX-->
     </div>
   </div>
