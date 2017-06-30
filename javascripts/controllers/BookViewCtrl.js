@@ -79,8 +79,7 @@ app.controller("BookViewCtrl", function($location, $rootScope, $routeParams, $sc
     let isCheckedOut = () => {
         return $scope.selectedBook.isCheckedOut ? true : false;
     };
-
-   
+ 
     $scope.addToWaitList = (waitList) => {
     	waitList.uid = $rootScope.user.uid;
     	waitList.date = new Date();
@@ -89,8 +88,8 @@ app.controller("BookViewCtrl", function($location, $rootScope, $routeParams, $sc
     		console.log("Error adding to waiting list", error);
     	});
 		$timeout(wait, 5000);
-		getBook();
-    };
+		};
+		
 		$scope.dynamicPopover = {
 			content: "You've been added to the waiting list",
 			templateUrl: 'myPopoverTemplate.html'
@@ -98,6 +97,7 @@ app.controller("BookViewCtrl", function($location, $rootScope, $routeParams, $sc
 		
 	let wait = () =>{
 		console.log("I'm waiting");
+		$location.url('/books/list');
 	};
 
 });
