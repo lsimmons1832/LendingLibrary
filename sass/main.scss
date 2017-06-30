@@ -31,7 +31,6 @@ body{
 	.title{
 		width: 9.375em;
 		max-height: 27px;
-		color: $teal;
 	}
     p{
 		width: 200px !important;
@@ -367,13 +366,13 @@ html {
 .book::before { left: -3px; }
 .book::after { left: -6px; }
 
-li > a:link {
+.title:link {
 	color: $lightteal;
-}
-li > a:visited{
+}		
+.title:visited{
 	color: $teal;
 }
-a:hover{
+.title:hover{
 	color:  $lightpurple;
 }
 

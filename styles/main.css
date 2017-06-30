@@ -21,8 +21,7 @@ body {
     font-family: 'Cormorant Garamond', serif; }
   body .title {
     width: 9.375em;
-    max-height: 27px;
-    color: #19647E; }
+    max-height: 27px; }
   body p {
     width: 200px !important;
     word-wrap: break-word !important;
@@ -359,13 +358,13 @@ html {
 .book::after {
   left: -6px; }
 
-li > a:link {
+.title:link {
   color: #119DA4; }
 
-li > a:visited {
+.title:visited {
   color: #19647E; }
 
-a:hover {
+.title:hover {
   color: #4B3F72; }
 
 ul.nav li a, ul.nav li a:visited {
