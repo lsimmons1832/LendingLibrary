@@ -6,7 +6,8 @@ body {
   padding: 0;
   position: relative; }
   body .New {
-    color: #19647E; }
+    color: #19647E;
+    font-family: 'Love Ya Like A Sister', cursive; }
   body .navbar {
     height: 100px;
     padding: 0;
@@ -30,7 +31,8 @@ body {
     color: #1F2041; }
   body .view {
     width: 50%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    font-family: 'Love Ya Like A Sister', cursive; }
 
 .det {
   color: #4B3F72; }
