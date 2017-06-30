@@ -1,4 +1,4 @@
-app.controller("BookViewCtrl", function($location, $rootScope, $routeParams, $scope, BookFactory, RatingFactory, WaitListFactory) {
+app.controller("BookViewCtrl", function($location, $rootScope, $routeParams, $scope, $timeout, BookFactory, RatingFactory, WaitListFactory) {
 
     $scope.selectedBook = [];
     $scope.averageRatings = 0;
@@ -88,11 +88,16 @@ app.controller("BookViewCtrl", function($location, $rootScope, $routeParams, $sc
     	}).catch((error)=>{
     		console.log("Error adding to waiting list", error);
     	});
-        //$location.url('/books/list');
+		$timeout(wait, 5000);
+		getBook();
     };
 		$scope.dynamicPopover = {
 			content: "You've been added to the waiting list",
 			templateUrl: 'myPopoverTemplate.html'
 		};
+		
+	let wait = () =>{
+		console.log("I'm waiting");
+	};
 
 });
