@@ -1,7 +1,7 @@
 body {
-  background-color: #FFC857;
+  background-color: #FFF3B0;
   color: #000;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Fredericka the Great', cursive;
   margin: 0 auto;
   padding: 0;
   position: relative; }
@@ -14,11 +14,11 @@ body {
     font-size: 20px; }
   body .branding {
     color: #1F2041;
-    font-family: 'Cormorant Garamond', serif; }
+    font-family: 'Fredericka the Great', cursive; }
   body .img {
     width: 128px;
     height: 195px;
-    font-family: 'Cormorant Garamond', serif; }
+    font-family: 'Fredericka the Great', cursive; }
   body .title {
     width: 9.375em;
     max-height: 27px; }
@@ -36,7 +36,7 @@ body {
   color: #4B3F72; }
 
 .slideText {
-  color: #FFF3B0;
+  color: #FFC857;
   font-weight: 600;
   font-size: 20px; }
 
@@ -102,7 +102,7 @@ form:after {
 
 #content h1 {
   color: #1F2041;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Fredericka the Great' cursive;
   letter-spacing: -0.05em;
   line-height: 20px;
   margin: 10px 0 30px; }
